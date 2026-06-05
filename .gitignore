@@ -4,6 +4,9 @@ checkpoints/
 data/
 wandb/
 
+# Local dataset archives.
+/realsense_droid.tar.gz
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

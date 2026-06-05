@@ -1,0 +1,26 @@
+universe = vanilla
+executable = openpi/run_pi05_droid_finetune.sh
+
+log = logs/pi05_droid_$(Cluster).log
+output = logs/pi05_droid_$(Cluster).out
+error = logs/pi05_droid_$(Cluster).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = openpi.tar.gz, realsense_droid.tar.gz
+transfer_output_files = openpi/checkpoints
+
+container_image = docker://nvcr.io/nvidia/pytorch:24.05-py3
+
+getenv = HF_TOKEN
+
++WantGPULab = true
++GPUJobLength = "long"
+
+request_gpus = 1
+gpus_minimum_memory = 80000M
+request_cpus = 8
+request_memory = 128GB
+request_disk = 200GB
+
+queue 1
