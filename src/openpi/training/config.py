@@ -858,6 +858,38 @@ _CONFIGS = [
         keep_period=20_000,
         num_workers=0,  # Important: RLDS DataLoader requires num_workers=0, handles multi-processing internally
     ),
+
+    TrainConfig(
+        name="pi05_droid_lora_finetune",
+        model=pi0_config.Pi0Config(
+            pi05=True,
+            action_dim=32,
+            action_horizon=10,
+            paligemma_variant="gemma_2b_lora",
+            action_expert_variant="gemma_300m_lora",
+        ),
+        data=LeRobotDROIDDataConfig(
+            repo_id="kindred/blue_block_droid",
+            base_config=DataConfig(prompt_from_task=True),
+            assets=AssetsConfig(
+                assets_dir="gs://openpi-assets/checkpoints/pi05_droid/assets",
+                asset_id="droid",
+            ),
+        ),
+        weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi05_droid/params"),
+        freeze_filter=pi0_config.Pi0Config(
+            pi05=True,
+            action_dim=32,
+            action_horizon=4,
+            paligemma_variant="gemma_2b_lora",
+            action_expert_variant="gemma_300m_lora",
+        ).get_freeze_filter(),
+        ema_decay=None,
+        num_train_steps=500,
+        batch_size=1,
+        save_interval=100,
+    ),
+    
     TrainConfig(
         # This config is for fine-tuning pi05 on the *full* DROID dataset.
         # We use RLDS data loading to make training on this large dataset tractable.
@@ -904,7 +936,7 @@ _CONFIGS = [
         ),
         data=LeRobotDROIDDataConfig(
             # Replace with your custom DROID LeRobot dataset repo id.
-            repo_id="your_hf_username/my_droid_dataset",
+            repo_id="kindred/realsense_droid",
             base_config=DataConfig(prompt_from_task=True),
             assets=AssetsConfig(
                 # Important: reuse the original DROID norm stats during fine-tuning!
@@ -913,7 +945,7 @@ _CONFIGS = [
             ),
         ),
         weight_loader=weight_loaders.CheckpointWeightLoader("gs://openpi-assets/checkpoints/pi05_droid/params"),
-        num_train_steps=20_000,
+        num_train_steps=20000,
         batch_size=32,
     ),
     #
