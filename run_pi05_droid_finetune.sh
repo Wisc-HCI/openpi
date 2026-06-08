@@ -40,6 +40,7 @@ uv venv --python 3.11
 GIT_LFS_SKIP_SMUDGE=1 uv sync
 GIT_LFS_SKIP_SMUDGE=1 uv pip install -e .
 
+# each chtc account only have default 40GB storage, so only keep the latest checkpoint for efficient usage
 uv run scripts/train.py pi05_droid_finetune \
   --exp-name=realsense_droid \
   --checkpoint-base-dir "$PWD/checkpoints" \
