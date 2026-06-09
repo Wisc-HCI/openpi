@@ -1,7 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
-tar -czf openpi.tar.gz \
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_PARENT="$(dirname "$SCRIPT_DIR")"
+OUTPUT="$REPO_PARENT/openpi.tar.gz"
+
+tar -czf "$OUTPUT" \
+    -C "$REPO_PARENT" \
     --exclude='openpi/.venv' \
     --exclude='openpi/.uv_cache' \
     --exclude='openpi/.hf_cache' \
@@ -9,4 +14,4 @@ tar -czf openpi.tar.gz \
     --exclude='openpi/checkpoints' \
     openpi/
 
-echo "Done: openpi.tar.gz ($(du -sh openpi.tar.gz | cut -f1))"
+echo "Done: $OUTPUT ($(du -sh "$OUTPUT" | cut -f1))"
