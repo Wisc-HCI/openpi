@@ -936,7 +936,8 @@ _CONFIGS = [
         ),
         data=LeRobotDROIDDataConfig(
             # Replace with your custom DROID LeRobot dataset repo id.
-            repo_id="kindred/realsense_droid",
+            # The root is $HF_HOME/lerobot/<repo_id>
+            repo_id="Wisc-HCI/realsense_droid_pick",
             base_config=DataConfig(prompt_from_task=True),
             assets=AssetsConfig(
                 # Important: reuse the original DROID norm stats during fine-tuning!

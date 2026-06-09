@@ -16,12 +16,11 @@ export OPENPI_DATA_HOME="$PWD/.openpi_cache"
 export XLA_PYTHON_CLIENT_MEM_FRACTION=0.97
 export XLA_PYTHON_CLIENT_PREALLOCATE=true
 export WANDB_MODE=offline
-export HUGGING_FACE_HUB_TOKEN="${HF_TOKEN:-}"
 
 mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 
-mkdir -p "$HF_HOME/lerobot"
-tar -xzf "$_CONDOR_SCRATCH_DIR/realsense_droid.tar.gz" -C "$HF_HOME/lerobot/"
+mkdir -p "$HF_HOME/lerobot/Wisc-HCI"
+tar -xzf "$_CONDOR_SCRATCH_DIR/realsense_droid_pick.tar.gz" -C "$HF_HOME/lerobot/Wisc-HCI/"
 
 export PATH="$PWD/bin:$HOME/.local/bin:$PATH"
 
