@@ -1,5 +1,5 @@
 universe = vanilla
-executable = openpi/run_pi05_droid_finetune.sh
+executable = run_pi05_droid_finetune.sh
 
 log = logs/pi05_droid_$(Cluster).log
 output = logs/pi05_droid_$(Cluster).out
