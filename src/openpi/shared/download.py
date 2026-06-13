@@ -137,6 +137,7 @@ def _download_fsspec(url: str, local_path: pathlib.Path, **kwargs) -> None:
             pbar.update(current_size - pbar.n)
             time.sleep(1)
         pbar.update(total_size - pbar.n)
+        future.result()
 
 
 def _set_permission(path: pathlib.Path, target_permission: int):

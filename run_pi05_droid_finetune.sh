@@ -44,10 +44,12 @@ uv run scripts/train.py pi05_droid_finetune \
   --exp-name=realsense_droid \
   --checkpoint-base-dir "$PWD/checkpoints" \
   --batch-size=2 \
-  --num-train-steps=40000 \
+  --num-train-steps=40 \
   --save-interval=5000 \
   --keep-period=None \
   --ema-decay=None \
   --no-wandb-enabled
 
+echo "Packaging checkpoints..."
+tar -czf "$_CONDOR_SCRATCH_DIR/checkpoints.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
 echo "End: $(date)"
