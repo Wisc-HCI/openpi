@@ -3,6 +3,7 @@ layout: default
 title: DROID/OpenPI Lab Pipeline
 nav_order: 1
 has_toc: false
+permalink: /
 ---
 
 # DROID/OpenPI Lab Pipeline
@@ -30,7 +31,6 @@ If you only want to run the existing policy and do not want to collect data or f
 
 ## Guides
 
-1. [Hardware Setup](./hardware-setup/hardware-setup.md)
-2. [Software Setup](./software-setup/software-setup.md)
-3. [Example Workflows](./example-workflows/example-workflows.md)
-
+1. [Hardware Setup]({{ site.baseurl }}/hardware-setup/)
+2. [Software Setup]({{ site.baseurl }}/software-setup/)
+3. [Example Workflows]({{ site.baseurl }}/example-workflows/)

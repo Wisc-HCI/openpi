@@ -3,6 +3,7 @@ layout: default
 title: Troubleshooting
 parent: Example Workflows
 nav_order: 5
+permalink: /example-workflows/troubleshooting/
 ---
 
 # Troubleshooting
@@ -58,4 +59,3 @@ Do not use:
 ## Robot Moves in the Wrong Direction
 
 Check action semantics before changing networking or camera code. The DROID runtime names the first seven action dimensions `joint_velocity`, but the deployment path treats them as normalized joint deltas. Training labels must match that execution meaning.
-

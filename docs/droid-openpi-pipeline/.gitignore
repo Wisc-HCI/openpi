@@ -1,0 +1,8 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+.gems/
+.home/
+.gem-spec-cache/
+vendor/

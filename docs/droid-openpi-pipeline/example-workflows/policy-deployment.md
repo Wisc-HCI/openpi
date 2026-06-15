@@ -3,6 +3,7 @@ layout: default
 title: Policy Deployment
 parent: Example Workflows
 nav_order: 4
+permalink: /example-workflows/policy-deployment/
 ---
 
 # Policy Deployment
@@ -79,4 +80,3 @@ python scripts/main.py \
 ```
 
 The script prompts for `Enter instruction:` and saves rollout results under `results/`.
-

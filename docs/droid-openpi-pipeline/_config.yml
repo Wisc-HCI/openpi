@@ -1,0 +1,30 @@
+title: DROID/OpenPI Lab Pipeline
+description: Lab documentation for the DROID hardware, OpenPI policy server, CHTC fine-tuning, and real-robot deployment workflow.
+theme: just-the-docs
+
+url: "http://127.0.0.1:4000"
+baseurl: "/droid-openpi-pipeline"
+
+color_scheme: lab
+
+aux_links:
+  OpenPI Repository: https://github.com/Wisc-HCI/openpi
+  DROID Repository: https://github.com/Wisc-HCI/droid
+
+nav_external_links:
+  - title: Official DROID Docs
+    url: https://droid-dataset.github.io/droid/docs/
+    hide_icon: false
+
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: Back to top
+
+callouts:
+  warning:
+    title: Warning
+    color: yellow
+  note:
+    title: Note
+    color: blue

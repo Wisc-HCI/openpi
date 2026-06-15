@@ -3,6 +3,7 @@ layout: default
 title: CHTC Fine-tuning
 parent: Example Workflows
 nav_order: 3
+permalink: /example-workflows/chtc-finetuning/
 ---
 
 # CHTC Fine-tuning
@@ -101,4 +102,3 @@ cd /home/kindred/Desktop/repo/openpi
 tar -xzf checkpoints.tar.gz
 find checkpoints -maxdepth 4 -type d | sort | tail
 ```
-

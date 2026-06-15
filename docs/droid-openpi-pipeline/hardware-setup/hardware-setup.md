@@ -4,6 +4,7 @@ title: Hardware Setup
 parent: DROID/OpenPI Lab Pipeline
 nav_order: 2
 has_toc: false
+permalink: /hardware-setup/
 ---
 
 # Hardware Setup
@@ -43,4 +44,3 @@ The DROID rollout client expects one external RealSense image and one wrist Real
 ```
 
 The first rollout step writes `robot_camera_views.png`. Inspect it before trusting a policy run.
-

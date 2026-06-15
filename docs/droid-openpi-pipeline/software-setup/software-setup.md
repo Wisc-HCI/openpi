@@ -4,6 +4,7 @@ title: Software Setup
 parent: DROID/OpenPI Lab Pipeline
 nav_order: 3
 has_toc: false
+permalink: /software-setup/
 ---
 
 # Software Setup
@@ -86,4 +87,3 @@ hf auth whoami
 ```
 
 For this lab workflow, do not put credentials in submit files or committed scripts.
-

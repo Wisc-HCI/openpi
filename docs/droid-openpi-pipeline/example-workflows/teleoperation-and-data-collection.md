@@ -3,6 +3,7 @@ layout: default
 title: Teleoperation and Data Collection
 parent: Example Workflows
 nav_order: 1
+permalink: /example-workflows/teleoperation-and-data-collection/
 ---
 
 # Teleoperation and Data Collection
@@ -59,4 +60,3 @@ Start with `Practice` in the GUI before saving real trajectories.
 ```
 
 The task text entered in the GUI is written into `metadata_openpi.json` and becomes the policy prompt after conversion.
-

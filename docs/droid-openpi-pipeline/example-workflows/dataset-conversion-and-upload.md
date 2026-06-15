@@ -3,6 +3,7 @@ layout: default
 title: Dataset Conversion and Upload
 parent: Example Workflows
 nav_order: 2
+permalink: /example-workflows/dataset-conversion-and-upload/
 ---
 
 # Dataset Conversion and Upload
@@ -52,4 +53,3 @@ hf upload Wisc-HCI/realsense_droid_pick \
 ```
 
 If you change the dataset repo id, update `repo_id` in `src/openpi/training/config.py` under `pi05_droid_finetune`.
-
