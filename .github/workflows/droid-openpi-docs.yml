@@ -1,0 +1,60 @@
+name: DROID/OpenPI docs
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docs/droid-openpi-pipeline/**"
+      - ".github/workflows/droid-openpi-docs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "droid-openpi-docs"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+          working-directory: docs/droid-openpi-pipeline
+
+      - name: Build DROID/OpenPI docs
+        working-directory: docs/droid-openpi-pipeline
+        run: |
+          bundle exec jekyll build \
+            --url "https://wisc-hci.github.io" \
+            --baseurl "/openpi/droid-openpi-pipeline" \
+            --destination "$GITHUB_WORKSPACE/_site/droid-openpi-pipeline"
+
+          cat > "$GITHUB_WORKSPACE/_site/index.html" <<'HTML'
+          <!doctype html>
+          <meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=/openpi/droid-openpi-pipeline/">
+          <title>DROID/OpenPI Lab Pipeline</title>
+          <a href="/openpi/droid-openpi-pipeline/">DROID/OpenPI Lab Pipeline</a>
+          HTML
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}droid-openpi-pipeline/
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
