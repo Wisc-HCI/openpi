@@ -32,9 +32,13 @@ jobs:
       - name: Build DROID/OpenPI docs
         working-directory: docs/droid-openpi-pipeline
         run: |
+          cat > "$RUNNER_TEMP/droid-openpi-pages.yml" <<'YAML'
+          url: "https://wisc-hci.github.io"
+          baseurl: "/openpi/droid-openpi-pipeline"
+          YAML
+
           bundle exec jekyll build \
-            --url "https://wisc-hci.github.io" \
-            --baseurl "/openpi/droid-openpi-pipeline" \
+            --config "_config.yml,$RUNNER_TEMP/droid-openpi-pages.yml" \
             --destination "$GITHUB_WORKSPACE/_site/droid-openpi-pipeline"
 
           cat > "$GITHUB_WORKSPACE/_site/index.html" <<'HTML'
