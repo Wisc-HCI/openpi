@@ -13,7 +13,7 @@ aux_links:
 
 nav_external_links:
   - title: Official DROID Docs
-    url: https://droid-dataset.github.io/droid/docs/
+    url: https://droid-dataset.github.io/droid/
     hide_icon: false
 
 search_enabled: true

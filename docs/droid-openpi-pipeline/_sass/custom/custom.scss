@@ -1,0 +1,9 @@
+.site-nav {
+  .nav-list .nav-list {
+    display: block !important;
+  }
+
+  .nav-list-expander svg {
+    transform: rotate(-90deg);
+  }
+}
