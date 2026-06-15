@@ -21,6 +21,11 @@ heading_anchors: true
 back_to_top: true
 back_to_top_text: Back to top
 
+exclude:
+  - README.md
+  - preview.py
+  - serve.sh
+
 callouts:
   warning:
     title: Warning

@@ -2,6 +2,7 @@
 layout: default
 title: CHTC Fine-tuning
 parent: Example Workflows
+grand_parent: DROID/OpenPI Lab Pipeline
 nav_order: 3
 permalink: /example-workflows/chtc-finetuning/
 ---

@@ -2,6 +2,7 @@
 layout: default
 title: Dataset Conversion and Upload
 parent: Example Workflows
+grand_parent: DROID/OpenPI Lab Pipeline
 nav_order: 2
 permalink: /example-workflows/dataset-conversion-and-upload/
 ---

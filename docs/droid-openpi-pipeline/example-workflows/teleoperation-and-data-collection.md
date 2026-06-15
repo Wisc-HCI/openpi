@@ -2,6 +2,7 @@
 layout: default
 title: Teleoperation and Data Collection
 parent: Example Workflows
+grand_parent: DROID/OpenPI Lab Pipeline
 nav_order: 1
 permalink: /example-workflows/teleoperation-and-data-collection/
 ---

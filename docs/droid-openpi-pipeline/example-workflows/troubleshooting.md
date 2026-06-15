@@ -2,6 +2,7 @@
 layout: default
 title: Troubleshooting
 parent: Example Workflows
+grand_parent: DROID/OpenPI Lab Pipeline
 nav_order: 5
 permalink: /example-workflows/troubleshooting/
 ---

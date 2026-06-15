@@ -2,6 +2,7 @@
 layout: default
 title: Policy Deployment
 parent: Example Workflows
+grand_parent: DROID/OpenPI Lab Pipeline
 nav_order: 4
 permalink: /example-workflows/policy-deployment/
 ---
