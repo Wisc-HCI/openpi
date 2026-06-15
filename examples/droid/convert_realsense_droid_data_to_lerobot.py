@@ -50,10 +50,7 @@ def load_hdf5_step(group: h5py.Group, index: int) -> dict:
 def load_lerobot_step(trajectory: h5py.File, index: int) -> dict:
     controller_info = {}
     if "controller_info" in trajectory["observation"]:
-        controller_info = {
-            key: value[index]
-            for key, value in trajectory["observation"]["controller_info"].items()
-        }
+        controller_info = {key: value[index] for key, value in trajectory["observation"]["controller_info"].items()}
 
     return {
         "observation": {
@@ -87,7 +84,7 @@ def read_video(path: Path) -> list[np.ndarray]:
 
 def load_language_instruction(episode_path: Path, attrs: h5py.AttributeManager, fallback_task: str) -> str:
     for key in ("current_task", "language_instruction"):
-        if key in attrs and attrs[key]:
+        if attrs.get(key):
             value = attrs[key]
             return value.decode("utf-8") if isinstance(value, bytes) else str(value)
 
@@ -270,7 +267,9 @@ def main(
             dataset.save_episode()
 
     if push_to_hub:
-        dataset.push_to_hub(tags=["droid", "panda", "realsense"], private=private, push_videos=True, license="apache-2.0")
+        dataset.push_to_hub(
+            tags=["droid", "panda", "realsense"], private=private, push_videos=True, license="apache-2.0"
+        )
 
     metadata = {
         "source_data_dir": str(data_dir),

@@ -10,11 +10,11 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 import html
-from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer
 from pathlib import Path
 import re
 import shutil
-
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
@@ -279,6 +279,7 @@ def build() -> None:
 
 def serve(port: int) -> None:
     build()
+
     class Handler(SimpleHTTPRequestHandler):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, directory=str(OUT), **kwargs)

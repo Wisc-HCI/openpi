@@ -858,7 +858,6 @@ _CONFIGS = [
         keep_period=20_000,
         num_workers=0,  # Important: RLDS DataLoader requires num_workers=0, handles multi-processing internally
     ),
-
     TrainConfig(
         name="pi05_droid_lora_finetune",
         model=pi0_config.Pi0Config(
@@ -889,7 +888,6 @@ _CONFIGS = [
         batch_size=1,
         save_interval=100,
     ),
-    
     TrainConfig(
         # This config is for fine-tuning pi05 on the *full* DROID dataset.
         # We use RLDS data loading to make training on this large dataset tractable.
