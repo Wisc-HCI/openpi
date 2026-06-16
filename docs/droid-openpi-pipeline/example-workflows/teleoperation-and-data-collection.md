@@ -25,11 +25,11 @@ On the control laptop:
 
 ```bash
 cd /home/kindred/Desktop/repo/droid
-conda activate droid
-python scripts/collect_openpi_realsense.py
+conda activate robot
+python -c "from droid.controllers.oculus_controller import VRPolicy; from droid.robot_env import RobotEnv; from droid.user_interface.data_collector import DataCollecter; from droid.user_interface.gui import RobotGUI; env=RobotEnv(); controller=VRPolicy(right_controller=True); robot=DataCollecter(env=env, controller=controller, save_data=False); RobotGUI(robot=robot, right_controller=True)"
 ```
 
-This script creates `RobotEnv()`, uses Quest `VRPolicy`, and saves data with `save_data="openpi"`.
+This script will open a GUI for you to collect demonstrations.
 
 ## Teleoperation Notes
 
@@ -46,7 +46,7 @@ Start with `Practice` in the GUI before saving real trajectories.
 ## Saved Data Layout
 
 ```text
-/home/kindred/Desktop/repo/droid/data/
+/oath_to_your_droid_repo/data/
   success/
     YYYY-MM-DD/
       episode_name/

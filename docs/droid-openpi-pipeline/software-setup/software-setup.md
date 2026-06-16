@@ -9,7 +9,7 @@ permalink: /software-setup/
 
 # Software Setup
 
-This setup is split by machine. Keep OpenPI policy dependencies separate from DROID robot-control dependencies.
+This setup is split by machine. Currently we are using 3 computers. Keep OpenPI policy dependencies separate from DROID robot-control dependencies.
 
 ## 4090 Workstation: OpenPI
 

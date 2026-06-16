@@ -15,7 +15,7 @@ This page is not a from-scratch shopping or assembly guide. It records the hardw
 
 | Hardware | Purpose | Current lab value |
 | --- | --- | --- |
-| Franka Panda | Executes arm actions from the policy. | Robot IP `192.168.4.3` |
+| Franka Panda | Executes arm actions from the policy. | Left Robot IP `192.168.4.3` |
 | NUC | Runs DROID low-level robot server and Polymetis. | NUC IP `192.168.4.4` |
 | Control laptop | Runs DROID GUI, cameras, Quest teleop, and rollout client. | Laptop IP `192.168.4.6` |
 | External RealSense | Policy external camera input. | Serial `827312070419` |
@@ -40,7 +40,7 @@ Running `check_nuc_control.py --launch` is not a passive connectivity check. It 
 The DROID rollout client expects one external RealSense image and one wrist RealSense image. Current IDs are configured in the DROID checkout:
 
 ```bash
-/home/kindred/Desktop/repo/droid/droid/misc/parameters.py
+/path_to_your_droid_repo/droid/misc/parameters.py
 ```
 
 The first rollout step writes `robot_camera_views.png`. Inspect it before trusting a policy run.
