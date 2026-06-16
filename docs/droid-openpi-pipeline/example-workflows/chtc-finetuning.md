@@ -9,7 +9,7 @@ permalink: /example-workflows/chtc-finetuning/
 
 # CHTC Fine-tuning
 
-Use this workflow to fine-tune Pi0.5-DROID on the converted lab dataset.
+Use this workflow to fine-tune Pi0.5-DROID on the converted lab dataset. We recommend using lab's 4090 desktop for quick access to chtc terminal and file transfer.
 
 ## Access Point
 
