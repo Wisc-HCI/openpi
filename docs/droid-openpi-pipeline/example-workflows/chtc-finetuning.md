@@ -91,14 +91,14 @@ The current job packages outputs as `checkpoints.tar.gz` and sends them to `/sta
 
 ```bash
 rsync -avh --progress \
-  <netid>@transfer.chtc.wisc.edu:/staging/y/yyi49/checkpoints.tar.gz \
-  /home/kindred/Desktop/repo/openpi/
+  <netid>@transfer.chtc.wisc.edu:/staging/y/yyi49/checkpoints/realsense_droid_pickup_ckpt.tar.gz \
+  /path_to_openpi_repo/
 ```
 
 Then unpack on the 4090 workstation:
 
 ```bash
-cd /home/kindred/Desktop/repo/openpi
-tar -xzf checkpoints.tar.gz
+cd /path_to_openpi_repo/
+tar -xzf realsense_droid_pickup_ckpt.tar.gz
 find checkpoints -maxdepth 4 -type d | sort | tail
 ```
