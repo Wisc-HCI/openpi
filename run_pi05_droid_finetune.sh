@@ -19,8 +19,8 @@ export WANDB_MODE=offline
 
 mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 
-mkdir -p "$HF_HOME/lerobot/Wisc-HCI"
-tar -xzf "$_CONDOR_SCRATCH_DIR/realsense_droid_pick.tar.gz" -C "$HF_HOME/lerobot/Wisc-HCI/"
+mkdir -p "$HF_HOME/lerobot/peopleandrobots"
+tar -xzf "$_CONDOR_SCRATCH_DIR/realsense_droid_pickup.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
 
 export PATH="$PWD/bin:$HOME/.local/bin:$PATH"
 
@@ -53,5 +53,5 @@ uv run scripts/train.py pi05_droid_finetune \
   --no-wandb-enabled
 
 echo "Packaging checkpoints..."
-tar -czf "$_CONDOR_SCRATCH_DIR/checkpoints.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
+tar -czf "$_CONDOR_SCRATCH_DIR/realsense_droid_pickup_ckpt.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
 echo "End: $(date)"
