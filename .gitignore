@@ -3,6 +3,7 @@ assets/
 checkpoints/
 data/
 wandb/
+bin/
 
 # Local dataset archives.
 /realsense_droid.tar.gz
