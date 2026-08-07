@@ -1,0 +1,1134 @@
+{
+  "benchmark_vs_bddl_language_mismatch_count": 10,
+  "candidate_rule": "candidate target type must occur at the candidate's referring placement in the current :init, and all goal entity types must exist",
+  "suite": "libero_spatial",
+  "task_count": 10,
+  "tasks": [
+    {
+      "bddl_language": "Pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "main_table_between_plate_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "main_table_next_to_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "main_table_between_plate_ramekin_region"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "main_table_next_to_ramekin_region"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl from table center and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl from table center and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl from table center and place it on the plate",
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "main_table_table_center"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "main_table_next_to_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "main_table_table_center"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "main_table_next_to_plate_region"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "wooden_cabinet_1_top_region"
+          ],
+          "predicate": "In"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "wooden_cabinet_1_top_side"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1_top_region"
+          ],
+          "predicate": "Open"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "in",
+          "wooden_cabinet_1_top_region"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "wooden_cabinet_1_top_side"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl next to the cookies box and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl next to the cookie box and place it on the plate",
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "main_table_next_to_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "flat_stove_1_cook_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "main_table_next_to_box_region"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "flat_stove_1_cook_region"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl next to the plate and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl next to the plate and place it on the plate",
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "main_table_next_to_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "main_table_next_to_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "main_table_next_to_plate_region"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "main_table_next_to_ramekin_region"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl next to the ramekin and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl next to the cookie box and place it on the plate",
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "main_table_next_to_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "main_table_next_to_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "main_table_next_to_ramekin_region"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "main_table_next_to_box_region"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl on the cookies box and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl on the cookie box and place it on the plate",
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "cookies_1"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "wooden_cabinet_1_top_side"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "cookies_1"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "wooden_cabinet_1_top_side"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl on the ramekin and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl on the cookie box and place it on the plate",
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "glazed_rim_porcelain_ramekin_1"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "cookies_1"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "glazed_rim_porcelain_ramekin_1"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "cookies_1"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl on the stove and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl on the stove and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl on the stove and place it on the plate",
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "flat_stove_1_cook_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "wooden_cabinet_1_top_side"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "flat_stove_1_cook_region"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "wooden_cabinet_1_top_side"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_language": "Pick the akita black bowl on the wooden cabinet and place it on the plate",
+      "benchmark_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "cross_scene_mismatch": {
+        "instruction": "pick up the alphabet soup and place it in the basket",
+        "problem": "LIBERO_Floor_Manipulation",
+        "suite": "libero_object",
+        "task_id": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+      },
+      "executable_instructions": [
+        "pick up the black bowl on the stove and place it on the plate",
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "executable_task_ids": [
+        "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+        "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+      ],
+      "fixtures": {
+        "flat_stove_1": "flat_stove",
+        "main_table": "table",
+        "wooden_cabinet_1": "wooden_cabinet"
+      },
+      "goal_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "plate_1"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "initial_facts": [
+        {
+          "arguments": [
+            "akita_black_bowl_1",
+            "wooden_cabinet_1_top_side"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "akita_black_bowl_2",
+            "flat_stove_1_cook_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "plate_1",
+            "main_table_plate_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "cookies_1",
+            "main_table_box_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "glazed_rim_porcelain_ramekin_1",
+            "main_table_ramekin_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "wooden_cabinet_1",
+            "main_table_cabinet_region"
+          ],
+          "predicate": "On"
+        },
+        {
+          "arguments": [
+            "flat_stove_1",
+            "main_table_stove_region"
+          ],
+          "predicate": "On"
+        }
+      ],
+      "objects": {
+        "akita_black_bowl_1": "akita_black_bowl",
+        "akita_black_bowl_2": "akita_black_bowl",
+        "cookies_1": "cookies",
+        "glazed_rim_porcelain_ramekin_1": "glazed_rim_porcelain_ramekin",
+        "plate_1": "plate"
+      },
+      "rejected_task_reasons": {
+        "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement",
+        "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate": "no matching target object at the instruction's referring placement"
+      },
+      "target_object_placements": {
+        "akita_black_bowl_1": [
+          "on",
+          "wooden_cabinet_1_top_side"
+        ],
+        "akita_black_bowl_2": [
+          "on",
+          "flat_stove_1_cook_region"
+        ]
+      },
+      "target_type": "akita_black_bowl",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    }
+  ]
+}

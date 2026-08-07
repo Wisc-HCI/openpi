@@ -1,0 +1,1430 @@
+{
+  "baseline_scenario": "all__temperature_1",
+  "demos": [
+    {
+      "alternate_minus_true_cumulative_energy": 2.160113353517165,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9868776178850619,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.8108559781704727,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9995105369280756,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.945644937612897,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999579132,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 6.465916720377663,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.999997580224669,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.9599315326886355,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9996366799571669,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 9.900560830487406,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999974853235,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.33607282479486,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999807236,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 32.02994221555031,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 32.01174293204013,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 34.57647367862347,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "all__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.160113353517165,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8966100569376606,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.8108559781704727,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9783498719248082,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.945644937612897,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999935126175236,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 6.465916720377663,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9984468514352631,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.9599315326886355,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9812922331787939,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 9.900560830487406,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999498559640964,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.33607282479486,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999956095429087,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 32.02994221555031,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999878,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 32.01174293204013,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999876,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 34.57647367862347,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999991,
+      "scenario": "all__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.160113353517165,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.7465047087382051,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.8108559781704727,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8705046343640324,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.945644937612897,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9974594286261339,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 6.465916720377663,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9620558936897788,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.9599315326886355,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8786775127334899,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 9.900560830487406,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9929683710268381,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.33607282479486,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9979090349362305,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 32.02994221555031,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999998891370651,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 32.01174293204013,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999998881236484,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 34.57647367862347,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999689676885,
+      "scenario": "all__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 5.571662705996069,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999855286522901,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 5.028928303054027,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.99995715405085,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 14.760343084188918,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999998488,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.0467527298908337,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9977476032264088,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 7.84781208179276,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999998474272516,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 18.47011621694131,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 21.239571682659488,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 48.1913527864822,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 41.841744153263946,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 61.624697927707516,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 5.571662705996069,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9962102667255702,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 5.028928303054027,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9934967471847919,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 14.760343084188918,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999996112554811,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.0467527298908337,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9546421253785053,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 7.84781208179276,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9996095468659694,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 18.47011621694131,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999904823343,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 21.239571682659488,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999994032791,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 48.1913527864822,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 41.841744153263946,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 61.624697927707516,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "low__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 5.571662705996069,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9419053575610925,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 5.028928303054027,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9251496105419018,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 14.760343084188918,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.999376894581069,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.0467527298908337,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8210351295185851,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 7.84781208179276,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9806192896529968,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 18.47011621694131,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999024509922093,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 21.239571682659488,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999755727261432,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 48.1913527864822,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999656932,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 41.841744153263946,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999991793072,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 61.624697927707516,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999585,
+      "scenario": "low__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.8305098035716991,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9749379629253023,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.081108931046883,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9997148522384631,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.51408922394809,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999002325,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.266540370753642,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999778477,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.717637848850762,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9956588945577226,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 8.526367006473873,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.999999960727215,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.095345558518149,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999688027,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 33.07012758224371,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 41.33601736231069,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 31.869568476221428,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "middle__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.8305098035716991,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8618224477384216,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.081108931046883,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9833917651111148,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.51408922394809,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999900117305872,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.266540370753642,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999952934014044,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.717637848850762,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9380594253865084,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 8.526367006473873,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9998018656378049,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.095345558518149,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999944145812127,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 33.07012758224371,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999956,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 41.33601736231069,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 31.869568476221428,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999856,
+      "scenario": "middle__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.8305098035716991,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.714074273476886,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.081108931046883,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8849897151220147,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.51408922394809,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9968495187701061,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.266540370753642,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9978352216688468,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.717637848850762,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.7955676749353967,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 8.526367006473873,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9861180070808635,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 12.095345558518149,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9976422166188523,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 33.07012758224371,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999340958127,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 41.33601736231069,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999989431876,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 31.869568476221428,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999998798811729,
+      "scenario": "middle__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": -0.46050854766360594,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": false,
+      "final_true_probability": 0.28475069945065185,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.8899774500475743,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9969206569311994,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 9.82379432490931,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999970680222,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 6.954395884982592,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.999999089063532,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.009586527220149,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8827954741122229,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.8699302786587513,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9967950879040417,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.6171137709238605,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999023699455166,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 16.2016032900505,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999916,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 18.111567818970055,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999998,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.73105990145617,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999353557,
+      "scenario": "high__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": -0.46050854766360594,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": false,
+      "final_true_probability": 0.38686518915512047,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.8899774500475743,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9473487568049418,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 9.82379432490931,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999458551920142,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 6.954395884982592,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9990464797162002,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.009586527220149,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.7329392241543536,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.8699302786587513,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9463398075991815,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.6171137709238605,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9902154096580467,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 16.2016032900505,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999080116024,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 18.111567818970055,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999863778384,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.73105990145617,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999919598911926,
+      "scenario": "high__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": -0.46050854766360594,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": false,
+      "final_true_probability": 0.44268941119294547,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.8899774500475743,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8092259955433955,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 9.82379432490931,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9926952374208758,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 6.954395884982592,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9700319717309162,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.009586527220149,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.6235851029830066,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.8699302786587513,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.807673763333908,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.6171137709238605,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9095832414245119,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 16.2016032900505,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9996967960555696,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 18.111567818970055,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9998832996029883,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.73105990145617,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9971724974784683,
+      "scenario": "high__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.9624319359305389,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9806374849471126,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.342473827453631,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9987519793403848,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.915302295362778,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999552802,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.619082953922778,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9947180601161186,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.577201520769361,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9998942580418813,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 10.248804764750778,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999987468551,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.787106888409179,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999422104,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 30.76770908523554,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 25.40091776300023,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 34.48150523308114,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 1.0,
+      "scenario": "spread__temperature_0.5",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.9624319359305389,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8767959027664158,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.342473827453631,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9658575152425611,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.915302295362778,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999933127577105,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.619082953922778,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9320796738431592,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.577201520769361,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9898210420801695,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 10.248804764750778,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999646014664532,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.787106888409179,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999923981163319,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 30.76770908523554,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999565,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 25.40091776300023,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999906992,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 34.48150523308114,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999999999999989,
+      "scenario": "spread__temperature_1",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 1.9624319359305389,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.7273494243233242,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 3.342473827453631,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.8417406641959605,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.915302295362778,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9974206911117849,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 2.619082953922778,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.7874364182662719,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 4.577201520769361,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9079285483589883,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 10.248804764750778,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9940854184289099,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 11.787106888409179,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9972504191911116,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 30.76770908523554,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999997916100497,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 25.40091776300023,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.9999969502835266,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate__demo_0.npz"
+    },
+    {
+      "alternate_minus_true_cumulative_energy": 34.48150523308114,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_top1_correct": true,
+      "final_true_probability": 0.999999967458598,
+      "scenario": "spread__temperature_2",
+      "source_file": "artifacts/instruction_likelihood/candidate_raw/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate__demo_0.npz"
+    }
+  ],
+  "hypothesis": "final-prefix top-1 accuracy does not collapse by an order of magnitude under timestep and temperature changes",
+  "order_magnitude_retention_threshold": 0.1,
+  "result": {
+    "baseline_top1_accuracy": 1.0,
+    "count": 10,
+    "maximum_absolute_accuracy_drop": 0.09999999999999998,
+    "minimum_to_baseline_accuracy_ratio": 0.9,
+    "minimum_top1_accuracy": 0.9,
+    "passed": true,
+    "scenario_count": 15
+  },
+  "scenarios": {
+    "all__temperature_0.5": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 14.919725500386301,
+      "mean_final_true_probability": 0.9986022412418933,
+      "median_alternate_minus_true_cumulative_energy": 10.923102884050152,
+      "median_final_true_probability": 0.9999999987216184,
+      "softmax_temperature": 0.5
+    },
+    "all__temperature_1": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 14.919725500386301,
+      "mean_final_true_probability": 0.9854637991601027,
+      "median_alternate_minus_true_cumulative_energy": 10.923102884050152,
+      "median_final_true_probability": 0.99997168429081,
+      "softmax_temperature": 1.0
+    },
+    "all__temperature_2": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 14.919725500386301,
+      "mean_final_true_probability": 0.944607933034311,
+      "median_alternate_minus_true_cumulative_energy": 10.923102884050152,
+      "median_final_true_probability": 0.995213899826486,
+      "softmax_temperature": 2.0
+    },
+    "high__temperature_0.5": {
+      "count": 10,
+      "final_top1_accuracy": 0.9,
+      "flow_timestep_set": [
+        0.7,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 7.374852069955537,
+      "mean_final_true_probability": 0.9161163374410535,
+      "median_alternate_minus_true_cumulative_energy": 5.785754827953227,
+      "median_final_true_probability": 0.9999507295045242,
+      "softmax_temperature": 0.5
+    },
+    "high__temperature_1": {
+      "count": 10,
+      "final_top1_accuracy": 0.9,
+      "flow_timestep_set": [
+        0.7,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 7.374852069955537,
+      "mean_final_true_probability": 0.9002692576560491,
+      "median_alternate_minus_true_cumulative_energy": 5.785754827953227,
+      "median_final_true_probability": 0.9946309446871234,
+      "softmax_temperature": 1.0
+    },
+    "high__temperature_2": {
+      "count": 10,
+      "final_top1_accuracy": 0.9,
+      "flow_timestep_set": [
+        0.7,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 7.374852069955537,
+      "mean_final_true_probability": 0.8552237316766587,
+      "median_alternate_minus_true_cumulative_energy": 5.785754827953227,
+      "median_final_true_probability": 0.939807606577714,
+      "softmax_temperature": 2.0
+    },
+    "low__temperature_0.5": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.3
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 22.762298167197706,
+      "mean_final_true_probability": 0.9997690133356649,
+      "median_alternate_minus_true_cumulative_energy": 16.615229650565112,
+      "median_final_true_probability": 0.9999999999999244,
+      "softmax_temperature": 0.5
+    },
+    "low__temperature_1": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.3
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 22.762298167197706,
+      "mean_final_true_probability": 0.9943958287295931,
+      "median_alternate_minus_true_cumulative_energy": 16.615229650565112,
+      "median_final_true_probability": 0.9999998008689077,
+      "softmax_temperature": 1.0
+    },
+    "low__temperature_2": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.3
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 22.762298167197706,
+      "mean_final_true_probability": 0.9667964304718957,
+      "median_alternate_minus_true_cumulative_energy": 16.615229650565112,
+      "median_final_true_probability": 0.9996396727866392,
+      "softmax_temperature": 2.0
+    },
+    "middle__temperature_0.5": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 15.930731216393891,
+      "mean_final_true_probability": 0.9970311670295586,
+      "median_alternate_minus_true_cumulative_energy": 11.804717391233119,
+      "median_final_true_probability": 0.9999999999345176,
+      "softmax_temperature": 0.5
+    },
+    "middle__temperature_1": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 15.930731216393891,
+      "mean_final_true_probability": 0.9783055223587034,
+      "median_alternate_minus_true_cumulative_energy": 11.804717391233119,
+      "median_final_true_probability": 0.9999922131559,
+      "softmax_temperature": 1.0
+    },
+    "middle__temperature_2": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 15.930731216393891,
+      "mean_final_true_probability": 0.9373076440593138,
+      "median_alternate_minus_true_cumulative_energy": 11.804717391233119,
+      "median_final_true_probability": 0.9972458676944792,
+      "softmax_temperature": 2.0
+    },
+    "spread__temperature_0.5": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 13.710253626791593,
+      "mean_final_true_probability": 0.9974001781089843,
+      "median_alternate_minus_true_cumulative_energy": 11.017955826579978,
+      "median_final_true_probability": 0.9999999993445328,
+      "softmax_temperature": 0.5
+    },
+    "spread__temperature_1": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 13.710253626791593,
+      "mean_final_true_probability": 0.9764504446263456,
+      "median_alternate_minus_true_cumulative_energy": 11.017955826579978,
+      "median_final_true_probability": 0.9999784997913925,
+      "softmax_temperature": 1.0
+    },
+    "spread__temperature_2": {
+      "count": 10,
+      "final_top1_accuracy": 1.0,
+      "flow_timestep_set": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "mean_alternate_minus_true_cumulative_energy": 13.710253626791593,
+      "mean_final_true_probability": 0.9253208293228525,
+      "median_alternate_minus_true_cumulative_energy": 11.017955826579978,
+      "median_final_true_probability": 0.9956679188100107,
+      "softmax_temperature": 2.0
+    }
+  },
+  "source": "candidate_raw residual tensors from sanity tests 4/5; no additional model forwards",
+  "test": 5
+}

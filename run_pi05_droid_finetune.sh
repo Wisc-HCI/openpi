@@ -46,7 +46,7 @@ uv run scripts/train.py pi05_droid_finetune \
   --exp-name=cake \
   --checkpoint-base-dir "$PWD/checkpoints" \
   --batch-size=2 \
-  --num-train-steps=40 \
+  --num-train-steps=40000 \
   --save-interval=5000 \
   --keep-period=None \
   --ema-decay=None \

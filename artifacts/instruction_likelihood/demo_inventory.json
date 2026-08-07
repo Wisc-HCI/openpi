@@ -1,0 +1,3518 @@
+{
+  "demo_count": 500,
+  "demo_root": "/workspace/libero_spatial",
+  "demos": [
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 84,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 90,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 105,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 134,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 79,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 93,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 86,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 88,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 112,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 84,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 75,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 87,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 121,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 85,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 91,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 105,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 151,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 93,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 167,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 102,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 168,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 88,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 90,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 85,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 103,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 102,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 101,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 105,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 164,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 107,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 106,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 143,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 115,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 119,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 121,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 121,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 115,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 106,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 93,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 126,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 153,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 158,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 143,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 158,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 167,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 156,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 159,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 132,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 139,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 182,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 150,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 156,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 148,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 162,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 153,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 163,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 149,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 165,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 151,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 149,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 132,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 139,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 171,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 190,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 156,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 147,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 172,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 163,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 169,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 157,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 134,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 169,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 147,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 151,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 134,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 106,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 118,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 146,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 155,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 115,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 107,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 154,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 119,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 159,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "length": 152,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 115,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 107,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 157,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 107,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 104,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 126,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 116,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 106,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 152,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 165,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 104,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 116,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 173,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 116,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 121,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 105,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 169,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "length": 115,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 152,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 175,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 155,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 152,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 150,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 112,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 162,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 134,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 132,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 189,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 143,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 116,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 167,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 154,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 150,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 143,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 126,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 112,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 126,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 134,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 101,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 115,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 103,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 93,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 119,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 101,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 94,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 171,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 101,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 106,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 86,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 101,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 97,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 92,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 95,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 89,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 102,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 99,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 103,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 90,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "length": 90,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 121,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 121,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 119,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 101,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 123,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 118,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 100,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 96,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 154,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 102,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 116,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 114,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 118,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 107,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 91,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 147,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 106,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 116,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 119,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 118,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 111,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 102,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 98,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 86,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 144,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 113,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 112,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 110,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 108,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "length": 109,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 155,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 191,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 139,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 164,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 120,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 152,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 197,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 126,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 144,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 168,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 132,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 157,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 167,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 148,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 129,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 176,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 170,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 180,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "length": 154,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_0",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_1",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_2",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_3",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_4",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_5",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 139,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_6",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 164,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_7",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 119,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_8",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_9",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 173,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_10",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_11",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_12",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 126,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_13",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 134,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_14",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_15",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 193,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_16",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 142,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_17",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 182,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_18",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_19",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 135,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_20",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_21",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 137,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_22",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_23",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_24",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_25",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_26",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 143,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_27",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 124,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_28",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 141,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_29",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 122,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_30",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 132,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_31",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_32",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_33",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 144,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_34",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 145,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_35",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 125,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_36",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 133,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_37",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_38",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 140,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_39",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 127,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_40",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 139,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_41",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_42",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 132,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_43",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 128,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_44",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 131,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_45",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 130,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_46",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 139,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_47",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 136,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_48",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 117,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "episode": "demo_49",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "length": 138,
+      "path": "/workspace/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+      "task_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    }
+  ],
+  "tasks": [
+    "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+    "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+  ]
+}

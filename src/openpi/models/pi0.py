@@ -16,6 +16,15 @@ from openpi.shared import array_typing as at
 logger = logging.getLogger("openpi")
 
 
+def apply_bipolar_guidance(
+    positive_velocity: _model.Actions,
+    negative_velocity: _model.Actions,
+    guidance_scale: float | at.Float[at.Array, ""],
+) -> _model.Actions:
+    """Extrapolate the positive velocity away from a fixed negative instruction."""
+    return positive_velocity + guidance_scale * (positive_velocity - negative_velocity)
+
+
 def make_attn_mask(input_mask, mask_ar):
     """Adapted from big_vision.
 
@@ -213,6 +222,94 @@ class Pi0(_model.BaseModel):
 
         return jnp.mean(jnp.square(v_t - u_t), axis=-1)
 
+    def score_actions(
+        self,
+        rng: at.KeyArrayLike,
+        positive_observation: _model.Observation,
+        negative_observation: _model.Observation,
+        actions: _model.Actions,
+        executed_steps: at.Int[at.Array, ""],
+        *,
+        num_samples: int = 8,
+        tau_min: float | at.Float[at.Array, ""] = 0.3,
+        tau_max: float | at.Float[at.Array, ""] = 0.7,
+        action_dims: int = 8,
+    ) -> at.Float[at.Array, "b 2"]:
+        """Score actions under positive/negative instructions with common random numbers."""
+        positive_observation = _model.preprocess_observation(None, positive_observation, train=False)
+        negative_observation = _model.preprocess_observation(None, negative_observation, train=False)
+        if positive_observation.state.shape != negative_observation.state.shape:
+            raise ValueError(
+                "Positive and negative observations must have the same batch and state shapes, got "
+                f"{positive_observation.state.shape} and {negative_observation.state.shape}"
+            )
+
+        batch_size = positive_observation.state.shape[0]
+        expected_action_shape = (batch_size, self.action_horizon, self.action_dim)
+        if actions.shape != expected_action_shape:
+            raise ValueError(f"Expected actions with shape {expected_action_shape}, got {actions.shape}")
+        if action_dims > self.action_dim:
+            raise ValueError(f"action_dims ({action_dims}) exceeds model action_dim ({self.action_dim})")
+
+        model_observation = jax.tree.map(
+            lambda positive, negative: jnp.concatenate([positive, negative], axis=0),
+            positive_observation,
+            negative_observation,
+        )
+        candidate_actions = jnp.concatenate([actions, actions], axis=0)
+
+        prefix_tokens, prefix_mask, prefix_ar_mask = self.embed_prefix(model_observation)
+        prefix_attn_mask = make_attn_mask(prefix_mask, prefix_ar_mask)
+        positions = jnp.cumsum(prefix_mask, axis=1) - 1
+        _, kv_cache = self.PaliGemma.llm([prefix_tokens, None], mask=prefix_attn_mask, positions=positions)
+
+        time_rng, noise_rng = jax.random.split(rng)
+        times = jax.random.uniform(
+            time_rng,
+            (num_samples, batch_size),
+            minval=tau_min,
+            maxval=tau_max,
+        )
+        noises = jax.random.normal(
+            noise_rng,
+            (num_samples, batch_size, self.action_horizon, self.action_dim),
+        )
+        step_mask = jnp.arange(self.action_horizon) < executed_steps
+        dim_mask = jnp.arange(self.action_dim) < action_dims
+        residual_mask = jnp.logical_and(step_mask[:, None], dim_mask[None, :])
+        denominator = jnp.maximum(executed_steps, 1) * action_dims
+
+        def score_sample(_, sample):
+            time, noise = sample
+            candidate_time = jnp.concatenate([time, time], axis=0)
+            candidate_noise = jnp.concatenate([noise, noise], axis=0)
+            time_expanded = candidate_time[:, None, None]
+            x_t = time_expanded * candidate_noise + (1 - time_expanded) * candidate_actions
+            target_velocity = candidate_noise - candidate_actions
+
+            suffix_tokens, suffix_mask, suffix_ar_mask, adarms_cond = self.embed_suffix(
+                model_observation, x_t, candidate_time
+            )
+            suffix_attn_mask = make_attn_mask(suffix_mask, suffix_ar_mask)
+            prefix_attn_mask = einops.repeat(prefix_mask, "b p -> b s p", s=suffix_tokens.shape[1])
+            full_attn_mask = jnp.concatenate([prefix_attn_mask, suffix_attn_mask], axis=-1)
+            positions = jnp.sum(prefix_mask, axis=-1)[:, None] + jnp.cumsum(suffix_mask, axis=-1) - 1
+            (_, suffix_out), _ = self.PaliGemma.llm(
+                [None, suffix_tokens],
+                mask=full_attn_mask,
+                positions=positions,
+                kv_cache=kv_cache,
+                adarms_cond=[None, adarms_cond],
+            )
+            predicted_velocity = self.action_out_proj(suffix_out[:, -self.action_horizon :])
+            residual = predicted_velocity.astype(jnp.float32) - target_velocity.astype(jnp.float32)
+            energy = jnp.sum(jnp.square(residual) * residual_mask[None, :, :], axis=(1, 2)) / denominator
+            return None, energy
+
+        _, sample_energies = jax.lax.scan(score_sample, None, (times, noises))
+        candidate_energies = jnp.mean(sample_energies, axis=0)
+        return candidate_energies.reshape(2, batch_size).T
+
     @override
     def sample_actions(
         self,
@@ -221,25 +318,45 @@ class Pi0(_model.BaseModel):
         *,
         num_steps: int | at.Int[at.Array, ""] = 10,
         noise: at.Float[at.Array, "b ah ad"] | None = None,
+        negative_observation: _model.Observation | None = None,
+        guidance_scale: float | at.Float[at.Array, ""] = 1.0,
     ) -> _model.Actions:
         observation = _model.preprocess_observation(None, observation, train=False)
+        use_guidance = negative_observation is not None
+        if use_guidance:
+            negative_observation = _model.preprocess_observation(None, negative_observation, train=False)
+            if negative_observation.state.shape != observation.state.shape:
+                raise ValueError(
+                    "Positive and negative observations must have the same batch and state shapes, got "
+                    f"{observation.state.shape} and {negative_observation.state.shape}"
+                )
+            model_observation = jax.tree.map(
+                lambda positive, negative: jnp.concatenate([positive, negative], axis=0),
+                observation,
+                negative_observation,
+            )
+        else:
+            model_observation = observation
+
         # note that we use the convention more common in diffusion literature, where t=1 is noise and t=0 is the target
         # distribution. yes, this is the opposite of the pi0 paper, and I'm sorry.
         dt = -1.0 / num_steps
         batch_size = observation.state.shape[0]
+        model_batch_size = model_observation.state.shape[0]
         if noise is None:
             noise = jax.random.normal(rng, (batch_size, self.action_horizon, self.action_dim))
 
         # first fill KV cache with a forward pass of the prefix
-        prefix_tokens, prefix_mask, prefix_ar_mask = self.embed_prefix(observation)
+        prefix_tokens, prefix_mask, prefix_ar_mask = self.embed_prefix(model_observation)
         prefix_attn_mask = make_attn_mask(prefix_mask, prefix_ar_mask)
         positions = jnp.cumsum(prefix_mask, axis=1) - 1
         _, kv_cache = self.PaliGemma.llm([prefix_tokens, None], mask=prefix_attn_mask, positions=positions)
 
         def step(carry):
             x_t, time = carry
+            model_x_t = jnp.concatenate([x_t, x_t], axis=0) if use_guidance else x_t
             suffix_tokens, suffix_mask, suffix_ar_mask, adarms_cond = self.embed_suffix(
-                observation, x_t, jnp.broadcast_to(time, batch_size)
+                model_observation, model_x_t, jnp.broadcast_to(time, model_batch_size)
             )
             # `suffix_attn_mask` is shape (b, suffix_len, suffix_len) indicating how the suffix tokens can attend to each
             # other
@@ -251,7 +368,7 @@ class Pi0(_model.BaseModel):
             # generate the queries) can attend to the full prefix + suffix sequence (which generates the keys and values)
             full_attn_mask = jnp.concatenate([prefix_attn_mask, suffix_attn_mask], axis=-1)
             assert full_attn_mask.shape == (
-                batch_size,
+                model_batch_size,
                 suffix_tokens.shape[1],
                 prefix_tokens.shape[1] + suffix_tokens.shape[1],
             )
@@ -266,7 +383,12 @@ class Pi0(_model.BaseModel):
                 adarms_cond=[None, adarms_cond],
             )
             assert prefix_out is None
-            v_t = self.action_out_proj(suffix_out[:, -self.action_horizon :])
+            model_v_t = self.action_out_proj(suffix_out[:, -self.action_horizon :])
+            if use_guidance:
+                positive_v_t, negative_v_t = jnp.split(model_v_t, 2, axis=0)
+                v_t = apply_bipolar_guidance(positive_v_t, negative_v_t, guidance_scale)
+            else:
+                v_t = model_v_t
 
             return x_t + dt * v_t, time + dt
 

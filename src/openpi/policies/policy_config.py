@@ -5,6 +5,7 @@ from typing import Any
 
 import jax.numpy as jnp
 
+from openpi.legibility import observer as _observer
 import openpi.models.model as _model
 import openpi.policies.policy as _policy
 import openpi.shared.download as download
@@ -22,6 +23,9 @@ def create_trained_policy(
     default_prompt: str | None = None,
     norm_stats: dict[str, transforms.NormStats] | None = None,
     pytorch_device: str | None = None,
+    negative_prompt: str | None = None,
+    guidance_scale: float = 1.0,
+    observer_config: _observer.ObserverConfig | None = None,
 ) -> _policy.Policy:
     """Create a policy from a trained checkpoint.
 
@@ -37,17 +41,38 @@ def create_trained_policy(
             from the checkpoint directory.
         pytorch_device: Device to use for PyTorch models (e.g., "cpu", "cuda", "cuda:0").
                       If None and is_pytorch=True, will use "cuda" if available, otherwise "cpu".
+        negative_prompt: Fixed negative instruction for two-instruction bipolar guidance. If None, guidance is disabled.
+        guidance_scale: Extrapolation strength in ``v_pos + scale * (v_pos - v_neg)``.
+        observer_config: Online belief settings. If None, residual scoring and belief updates are disabled.
 
     Note:
         The function automatically detects whether the model is PyTorch-based by checking for the
         presence of "model.safensors" in the checkpoint directory.
     """
     repack_transforms = repack_transforms or transforms.Group()
+    if negative_prompt is not None and not negative_prompt.strip():
+        raise ValueError("negative_prompt must be non-empty when provided")
+    if observer_config is not None and negative_prompt is None:
+        raise ValueError("observer_config requires a negative_prompt")
+    if observer_config is not None and observer_config.action_dims > train_config.model.action_dim:
+        raise ValueError(
+            f"Observer action_dims ({observer_config.action_dims}) exceeds model action_dim "
+            f"({train_config.model.action_dim})"
+        )
+    if negative_prompt is not None and train_config.model.model_type not in {
+        _model.ModelType.PI0,
+        _model.ModelType.PI05,
+    }:
+        raise ValueError("Fixed-negative guidance is supported only for Pi0/Pi0.5 models")
+    if guidance_scale < 0:
+        raise ValueError(f"guidance_scale must be non-negative, got {guidance_scale}")
     checkpoint_dir = download.maybe_download(str(checkpoint_dir))
 
     # Check if this is a PyTorch model by looking for model.safetensors
     weight_path = os.path.join(checkpoint_dir, "model.safetensors")
     is_pytorch = os.path.exists(weight_path)
+    if negative_prompt is not None and is_pytorch:
+        raise ValueError("Fixed-negative guidance is currently implemented only for JAX checkpoints")
 
     logging.info("Loading model...")
     if is_pytorch:
@@ -72,6 +97,29 @@ def create_trained_policy(
         except ImportError:
             pytorch_device = "cpu"
 
+    fixed_guidance_enabled = (
+        negative_prompt is not None
+        and guidance_scale > 0
+        and not (observer_config is not None and observer_config.belief_weighted)
+    )
+    negative_prompt_enabled = fixed_guidance_enabled or observer_config is not None
+    resolved_sample_kwargs = dict(sample_kwargs or {})
+    if fixed_guidance_enabled:
+        logging.info("Enabling fixed-negative guidance with scale %.3f and prompt %r", guidance_scale, negative_prompt)
+        resolved_sample_kwargs["guidance_scale"] = guidance_scale
+    if observer_config is not None:
+        logging.info(
+            "Enabling online observer: negative_prompt=%r T=%.6g samples=%d tau=[%.3f, %.3f] "
+            "belief_weighted=%s lambda=%.3f",
+            negative_prompt,
+            observer_config.temperature,
+            observer_config.num_samples,
+            observer_config.tau_min,
+            observer_config.tau_max,
+            observer_config.belief_weighted,
+            observer_config.guidance_lambda,
+        )
+
     return _policy.Policy(
         model,
         transforms=[
@@ -87,8 +135,10 @@ def create_trained_policy(
             *data_config.data_transforms.outputs,
             *repack_transforms.outputs,
         ],
-        sample_kwargs=sample_kwargs,
+        sample_kwargs=resolved_sample_kwargs,
         metadata=train_config.policy_metadata,
         is_pytorch=is_pytorch,
         pytorch_device=pytorch_device if is_pytorch else None,
+        negative_prompt=negative_prompt if negative_prompt_enabled else None,
+        observer_config=observer_config,
     )

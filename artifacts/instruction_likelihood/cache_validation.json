@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_libero",
+  "chunk_start": 0,
+  "chunk_stop": 10,
+  "comparison": {
+    "absolute_tolerance": 0.02,
+    "allclose": true,
+    "max_absolute_difference": 0.015625,
+    "mean_absolute_difference": 0.0017457485664635897,
+    "relative_tolerance": 0.02,
+    "residual_shape": [
+      1,
+      10,
+      32
+    ]
+  },
+  "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+  "input_source": "saved real checkpoint-normalized demonstrated action chunk inverse-transformed to raw; deterministic zero observation used only for cached/full implementation equivalence",
+  "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "model_action_dim": 32,
+  "model_action_horizon": 10,
+  "passed": true,
+  "purpose": "external prefix KV-cache hook versus unmodified native full velocity-residual forward"
+}

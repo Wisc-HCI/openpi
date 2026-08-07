@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "all five sanity checks passed and tests 1-3 are significant",
+    "native full forward and external prefix-cache hook agree within recorded bfloat16 tolerance",
+    "one demo from each of all 10 inventoried Spatial tasks",
+    "all raw residual/action/noise tensors finite and schema-valid",
+    "native stride-1 10-step chunk boundaries cover every complete prefix",
+    "saved chunk energies exactly reproduce from raw 7-D residual tensors",
+    "candidate true residual/actions and all common flow noise exactly match the test-1 baseline",
+    "every layout has exactly two BDDL-grounded candidates and mismatch suite is LIBERO-Object"
+  ],
+  "demo_count": 10,
+  "passed": true,
+  "raw_npz_count": 40,
+  "raw_residual_scalar_count": 2480100
+}

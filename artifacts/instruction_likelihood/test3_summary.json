@@ -1,0 +1,114 @@
+{
+  "alpha": 0.05,
+  "demos": [
+    {
+      "baseline_mean_residual": 0.20615608829216686,
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.122298443414815,
+      "random_minus_baseline": 5.916142355122648,
+      "random_minus_shuffled": 3.665041543211622,
+      "shuffled_mean_residual": 2.457256900203193
+    },
+    {
+      "baseline_mean_residual": 0.18595037709320522,
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.45806468400419,
+      "random_minus_baseline": 6.272114306910985,
+      "random_minus_shuffled": 4.244520506251885,
+      "shuffled_mean_residual": 2.213544177752305
+    },
+    {
+      "baseline_mean_residual": 0.1401537394926098,
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.399434056238231,
+      "random_minus_baseline": 6.259280316745621,
+      "random_minus_shuffled": 3.714626180475652,
+      "shuffled_mean_residual": 2.684807875762579
+    },
+    {
+      "baseline_mean_residual": 0.2969788186302603,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.5287885478313585,
+      "random_minus_baseline": 6.231809729201098,
+      "random_minus_shuffled": 4.258095498428014,
+      "shuffled_mean_residual": 2.2706930494033446
+    },
+    {
+      "baseline_mean_residual": 0.18055084561740667,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.321556192768527,
+      "random_minus_baseline": 6.14100534715112,
+      "random_minus_shuffled": 3.962113425324803,
+      "shuffled_mean_residual": 2.3594427674437237
+    },
+    {
+      "baseline_mean_residual": 0.09673879203008864,
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.063510067504198,
+      "random_minus_baseline": 5.966771275474109,
+      "random_minus_shuffled": 3.7492574812511466,
+      "shuffled_mean_residual": 2.314252586253051
+    },
+    {
+      "baseline_mean_residual": 0.15562423787243465,
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.557824800760694,
+      "random_minus_baseline": 6.402200562888259,
+      "random_minus_shuffled": 4.166076339524972,
+      "shuffled_mean_residual": 2.391748461235722
+    },
+    {
+      "baseline_mean_residual": 0.16094073425571237,
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.511792656937912,
+      "random_minus_baseline": 6.3508519226822,
+      "random_minus_shuffled": 3.946595055122628,
+      "shuffled_mean_residual": 2.565197601815284
+    },
+    {
+      "baseline_mean_residual": 0.2721092225667679,
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.4696524926376116,
+      "random_minus_baseline": 6.1975432700708435,
+      "random_minus_shuffled": 4.330382441281389,
+      "shuffled_mean_residual": 2.139270051356222
+    },
+    {
+      "baseline_mean_residual": 0.13141854606542355,
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "random_mean_residual": 6.376939472002739,
+      "random_minus_baseline": 6.245520925937316,
+      "random_minus_shuffled": 3.7458596292784816,
+      "shuffled_mean_residual": 2.6310798427242577
+    }
+  ],
+  "hypothesis": "Gaussian random action residual is higher than both chronological and shuffled actions",
+  "random_definition": "N(0,1) in checkpoint quantile-normalized physical 7-D action space, inverse-transformed to raw actions before the official input pipeline",
+  "result": {
+    "baseline_mean": 0.1826621401916076,
+    "count": 10,
+    "passed": true,
+    "random_mean": 6.380986141410028,
+    "random_vs_baseline": {
+      "count": 10,
+      "left_mean": 0.1826621401916076,
+      "median_difference": 6.2386653275692066,
+      "passed": true,
+      "pvalue": 0.0009765625,
+      "right_mean": 6.380986141410028,
+      "statistic": 0.0
+    },
+    "random_vs_shuffle": {
+      "count": 10,
+      "left_mean": 2.4027293313949682,
+      "median_difference": 3.9543542402237155,
+      "passed": true,
+      "pvalue": 0.0009765625,
+      "right_mean": 6.380986141410028,
+      "statistic": 0.0
+    },
+    "shuffled_mean": 2.4027293313949682
+  },
+  "test": 3,
+  "unit_of_analysis": "demo (mean across native stride-1 chunks)"
+}

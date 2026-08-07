@@ -1,0 +1,6 @@
+test,check,n,primary_value,effect,pvalue,criterion,passed
+1,paired vs cross-scene mismatch,10,matched=0.182662; mismatch=0.259947,median_delta=0.065717,0.001953125,one-sided paired Wilcoxon p<0.05 and matched residual lower,True
+2,temporal shuffle,10,chronological=0.182662; shuffled=2.402729,median_delta=2.226819,0.000976562,one-sided paired Wilcoxon p<0.05 and shuffled residual higher,True
+3,Gaussian random actions,10,chronological=0.182662; shuffled=2.402729; random=6.380986,random higher than chronological and shuffled,vs_chronological=0.000976562; vs_shuffled=0.000976562,both one-sided paired Wilcoxon tests p<0.05,True
+4,true-instruction posterior prefix trend,10,median_rho=0.943140; positive_rho_fraction=0.900,median_final_minus_prior=0.499972; final_top1=1.000,NA (descriptive trend; significance not required),median rho/gain positive and >=60% demos positive,True
+5,flow timestep and softmax temperature sensitivity,10,baseline_top1=1.000; minimum_top1=0.900,minimum_to_baseline_ratio=0.900,NA (stability check),worst top-1 retains >=10% of baseline (literal one-order threshold),True

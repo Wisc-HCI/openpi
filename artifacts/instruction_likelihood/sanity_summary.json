@@ -1,0 +1,56 @@
+{
+  "all_five_passed": true,
+  "rows": [
+    {
+      "check": "paired vs cross-scene mismatch",
+      "criterion": "one-sided paired Wilcoxon p<0.05 and matched residual lower",
+      "effect": "median_delta=0.065717",
+      "n": 10,
+      "passed": true,
+      "primary_value": "matched=0.182662; mismatch=0.259947",
+      "pvalue": "0.001953125",
+      "test": 1
+    },
+    {
+      "check": "temporal shuffle",
+      "criterion": "one-sided paired Wilcoxon p<0.05 and shuffled residual higher",
+      "effect": "median_delta=2.226819",
+      "n": 10,
+      "passed": true,
+      "primary_value": "chronological=0.182662; shuffled=2.402729",
+      "pvalue": "0.000976562",
+      "test": 2
+    },
+    {
+      "check": "Gaussian random actions",
+      "criterion": "both one-sided paired Wilcoxon tests p<0.05",
+      "effect": "random higher than chronological and shuffled",
+      "n": 10,
+      "passed": true,
+      "primary_value": "chronological=0.182662; shuffled=2.402729; random=6.380986",
+      "pvalue": "vs_chronological=0.000976562; vs_shuffled=0.000976562",
+      "test": 3
+    },
+    {
+      "check": "true-instruction posterior prefix trend",
+      "criterion": "median rho/gain positive and >=60% demos positive",
+      "effect": "median_final_minus_prior=0.499972; final_top1=1.000",
+      "n": 10,
+      "passed": true,
+      "primary_value": "median_rho=0.943140; positive_rho_fraction=0.900",
+      "pvalue": "NA (descriptive trend; significance not required)",
+      "test": 4
+    },
+    {
+      "check": "flow timestep and softmax temperature sensitivity",
+      "criterion": "worst top-1 retains >=10% of baseline (literal one-order threshold)",
+      "effect": "minimum_to_baseline_ratio=0.900",
+      "n": 10,
+      "passed": true,
+      "primary_value": "baseline_top1=1.000; minimum_top1=0.900",
+      "pvalue": "NA (stability check)",
+      "test": 5
+    }
+  ],
+  "tests_1_to_3_significant": true
+}

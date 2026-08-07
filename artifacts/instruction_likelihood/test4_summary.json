@@ -1,0 +1,138 @@
+{
+  "candidate_prior": "uniform over the two BDDL-validated executable Spatial instructions",
+  "demos": [
+    {
+      "alternate_instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.3966100569376606,
+      "final_probability": 0.8966100569376606,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.5437094460327169,
+      "prefix_count": 89,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.45308474297238344,
+      "true_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.47834987192480816,
+      "final_probability": 0.9783498719248082,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.5082878567760297,
+      "prefix_count": 94,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.4301511758118701,
+      "true_instruction": "pick up the black bowl from table center and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.49999351261752356,
+      "final_probability": 0.9999935126175236,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.5124584511971121,
+      "prefix_count": 144,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.9925090536923317,
+      "true_instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl on the stove and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.4984468514352631,
+      "final_probability": 0.9984468514352631,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.697268159761819,
+      "prefix_count": 114,
+      "prior_probability": 0.5,
+      "spearman_rho": -0.06674820484494595,
+      "true_instruction": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.4812922331787939,
+      "final_probability": 0.9812922331787939,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.5149311600672069,
+      "prefix_count": 106,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.7001410685946042,
+      "true_instruction": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.49994985596409636,
+      "final_probability": 0.9999498559640964,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.6060114531379265,
+      "prefix_count": 143,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.8937705972188731,
+      "true_instruction": "pick up the black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.49999560954290867,
+      "final_probability": 0.9999956095429087,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.6421058740550731,
+      "prefix_count": 90,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.9925306577480492,
+      "true_instruction": "pick up the black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.4999999999999878,
+      "final_probability": 0.9999999999999878,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.5719659202850897,
+      "prefix_count": 128,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.9993235688729877,
+      "true_instruction": "pick up the black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.49999999999998757,
+      "final_probability": 0.9999999999999876,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.593918264425999,
+      "prefix_count": 146,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.9995542089475554,
+      "true_instruction": "pick up the black bowl on the stove and place it on the plate"
+    },
+    {
+      "alternate_instruction": "pick up the black bowl on the stove and place it on the plate",
+      "demo_id": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate:demo_0",
+      "final_minus_prior": 0.4999999999999991,
+      "final_probability": 0.9999999999999991,
+      "final_top1_correct": true,
+      "first_prefix_probability": 0.6133628450178756,
+      "prefix_count": 127,
+      "prior_probability": 0.5,
+      "spearman_rho": 0.9961545504486357,
+      "true_instruction": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    }
+  ],
+  "hypothesis": "true-instruction posterior generally rises with observed prefix length",
+  "result": {
+    "count": 10,
+    "final_top1_accuracy": 1.0,
+    "mean_final_minus_prior": 0.48546379916010285,
+    "mean_spearman_rho": 0.7390471419462343,
+    "median_final_minus_prior": 0.49997168429080996,
+    "median_spearman_rho": 0.9431398254556024,
+    "positive_endpoint_fraction": 1.0,
+    "positive_rho_fraction": 0.9,
+    "trend_observed": true
+  },
+  "test": 4
+}
