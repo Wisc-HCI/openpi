@@ -20,7 +20,7 @@ export WANDB_MODE=offline
 mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 
 mkdir -p "$HF_HOME/lerobot/peopleandrobots"
-tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
+tar -xzf "$_CONDOR_SCRATCH_DIR/spatial.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
 
 export PATH="$PWD/bin:$HOME/.local/bin:$PATH"
 
@@ -43,7 +43,7 @@ mkdir -p "$PWD/checkpoints"
 
 # each chtc account only have default 40GB storage, so only keep the latest checkpoint for efficient usage
 uv run scripts/train.py pi05_droid_finetune \
-  --exp-name=smoothie \
+  --exp-name=spatial \
   --checkpoint-base-dir "$PWD/checkpoints" \
   --batch-size=2 \
   --num-train-steps=40000 \
@@ -53,5 +53,5 @@ uv run scripts/train.py pi05_droid_finetune \
   --no-wandb-enabled
 
 echo "Packaging checkpoints..."
-tar -czf "$_CONDOR_SCRATCH_DIR/smoothie_ckpt.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
+tar -czf "$_CONDOR_SCRATCH_DIR/spatial_ckpt.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
 echo "End: $(date)"
