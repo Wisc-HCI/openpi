@@ -19,8 +19,27 @@ export WANDB_MODE=offline
 
 mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 
-mkdir -p "$HF_HOME/lerobot/peopleandrobots"
-tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie2.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
+# mkdir -p "$HF_HOME/lerobot/peopleandrobots"
+# tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie2.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
+
+########### update
+ATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/smoothie2"
+mkdir -p "$HF_LEROBOT_HOME/peopleandrobots"
+
+echo "Extracting smoothie2 dataset..."
+tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie2.tar.gz" \
+  --strip-components=6 \
+  -C "$HF_LEROBOT_HOME/peopleandrobots"
+
+if [[ ! -f "$DATASET_ROOT/meta/info.json" ]]; then
+  echo "ERROR: Dataset metadata was not extracted to:"
+  echo "$DATASET_ROOT/meta/info.json"
+  exit 2
+fi
+
+echo "Dataset extracted successfully:"
+ls -lah "$DATASET_ROOT/meta"
+#########
 
 export PATH="$PWD/bin:$HOME/.local/bin:$PATH"
 
