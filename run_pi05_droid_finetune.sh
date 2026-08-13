@@ -12,6 +12,9 @@ cd openpi
 export HOME="$PWD/home"
 export UV_CACHE_DIR="$PWD/.uv_cache"
 export HF_HOME="$PWD/.hf_cache"
+#########
+export HF_LEROBOT_HOME="$HF_HOME/lerobot"
+########
 export OPENPI_DATA_HOME="$PWD/.openpi_cache"
 export XLA_PYTHON_CLIENT_MEM_FRACTION=0.97
 export XLA_PYTHON_CLIENT_PREALLOCATE=true
@@ -23,7 +26,7 @@ mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 # tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie2.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
 
 ########### update
-ATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/smoothie2"
+DATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/smoothie2"
 mkdir -p "$HF_LEROBOT_HOME/peopleandrobots"
 
 echo "Extracting smoothie2 dataset..."
