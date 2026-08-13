@@ -146,3 +146,31 @@ def test_score_actions_uses_common_random_numbers_for_both_instructions():
 
     assert energies.shape == (1, 2)
     np.testing.assert_array_equal(energies[:, 0], energies[:, 1])
+
+
+def test_score_actions_is_equivariant_to_candidate_order():
+    model = _FakePi0()
+    actions = jnp.zeros((1, model.action_horizon, model.action_dim), dtype=jnp.float32)
+
+    forward = _pi0.Pi0.score_actions(
+        model,
+        jax.random.key(7),
+        _fake_observation(2),
+        _fake_observation(1),
+        actions,
+        jnp.asarray(2),
+        num_samples=4,
+        action_dims=1,
+    )
+    reversed_order = _pi0.Pi0.score_actions(
+        model,
+        jax.random.key(7),
+        _fake_observation(1),
+        _fake_observation(2),
+        actions,
+        jnp.asarray(2),
+        num_samples=4,
+        action_dims=1,
+    )
+
+    np.testing.assert_allclose(forward, reversed_order[:, ::-1], rtol=1e-6, atol=1e-6)

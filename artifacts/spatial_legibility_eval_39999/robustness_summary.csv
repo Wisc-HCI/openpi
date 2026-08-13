@@ -1,0 +1,4 @@
+run,action_dims,num_samples,num_seeds,tau_min,tau_max,train_final_accuracy,train_early_auc,test_final_accuracy,test_early_auc,heldout_to_train_energy_ratio,heldout_outcome_agreement_with_primary
+primary,8,8,3,0.3,0.7,0.96875,0.8542963407839712,0.375,0.5072902883989721,16.931765886419825,1.0
+joint_only,7,8,3,0.3,0.7,0.96875,0.8544150054490167,0.375,0.5054613125368503,15.743821888513672,1.0
+wide_tau,8,24,1,0.1,0.9,0.96875,0.8786907748694023,0.5,0.5648539430663614,20.858417500026995,0.875

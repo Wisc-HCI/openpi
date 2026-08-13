@@ -1,0 +1,25 @@
+{
+  "checkpoint_dir": "/workspace/checkpoints/pi05_droid_finetune/spatial/39999",
+  "data_dir": "/home/hci-lab/repos/droid/data",
+  "output_dir": "/home/hci-lab/repos/openpi/artifacts/spatial_legibility_eval_39999_wide_tau",
+  "config_name": "pi05_droid_finetune",
+  "date": "2026-08-09",
+  "num_samples": 24,
+  "seeds": [
+    0
+  ],
+  "tau_min": 0.1,
+  "tau_max": 0.9,
+  "action_dims": 8,
+  "split": "both",
+  "max_episodes": null,
+  "overwrite": true,
+  "jax_devices": [
+    "cuda:0"
+  ],
+  "candidate_instructions": [
+    "pick up the left block",
+    "pick up the right block"
+  ],
+  "evidence_timestamp": "chunk stop; no future-action leakage"
+}
