@@ -30,12 +30,12 @@ DATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/smoothie3"
 mkdir -p "$HF_LEROBOT_HOME/peopleandrobots"
 
 tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie3.tar.gz" \
-  --strip-components=6 \
   -C "$HF_LEROBOT_HOME/peopleandrobots"
 
 if [[ ! -f "$DATASET_ROOT/meta/info.json" ]]; then
   echo "ERROR: Dataset metadata was not extracted to:"
   echo "$DATASET_ROOT/meta/info.json"
+  tar -tzf "$_CONDOR_SCRATCH_DIR/smoothie3.tar.gz" | head -5
   exit 2
 fi
 
