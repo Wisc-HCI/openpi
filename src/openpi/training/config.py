@@ -937,7 +937,7 @@ _CONFIGS = [
         data=LeRobotDROIDDataConfig(
             # Replace with your custom DROID LeRobot dataset repo id.
             # The root is $HF_HOME/lerobot/<repo_id>
-            repo_id="peopleandrobots/smoothie2",
+            repo_id="peopleandrobots/smoothie3",
             base_config=DataConfig(prompt_from_task=True),
             assets=AssetsConfig(
                 # Important: reuse the original DROID norm stats during fine-tuning!
