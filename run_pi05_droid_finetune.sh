@@ -35,7 +35,7 @@ tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie3.tar.gz" \
 if [[ ! -f "$DATASET_ROOT/meta/info.json" ]]; then
   echo "ERROR: Dataset metadata was not extracted to:"
   echo "$DATASET_ROOT/meta/info.json"
-  tar -tzf "$_CONDOR_SCRATCH_DIR/smoothie3.tar.gz" | head -5
+  tar -tzf "$_CONDOR_SCRATCH_DIR/smoothie4.tar.gz" | head -5
   exit 2
 fi
 
@@ -74,5 +74,5 @@ uv run scripts/train.py pi05_droid_finetune \
   --no-wandb-enabled
 
 echo "Packaging checkpoints..."
-tar -czf "$_CONDOR_SCRATCH_DIR/smoothie3_ckpt.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
+tar -czf "$_CONDOR_SCRATCH_DIR/smoothie4_ckpt.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
 echo "End: $(date)"
