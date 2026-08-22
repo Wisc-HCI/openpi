@@ -26,10 +26,10 @@ mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 # tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie2.tar.gz" -C "$HF_HOME/lerobot/peopleandrobots/"
 
 ########### update
-DATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/smoothie3"
+DATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/smoothie4"
 mkdir -p "$HF_LEROBOT_HOME/peopleandrobots"
 
-tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie3.tar.gz" \
+tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie4.tar.gz" \
   -C "$HF_LEROBOT_HOME/peopleandrobots"
 
 if [[ ! -f "$DATASET_ROOT/meta/info.json" ]]; then
@@ -64,7 +64,7 @@ mkdir -p "$PWD/checkpoints"
 
 # each chtc account only have default 40GB storage, so only keep the latest checkpoint for efficient usage
 uv run scripts/train.py pi05_droid_finetune \
-  --exp-name=smoothie3 \
+  --exp-name=smoothie4 \
   --checkpoint-base-dir "$PWD/checkpoints" \
   --batch-size=2 \
   --num-train-steps=40000 \
