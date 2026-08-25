@@ -1,0 +1,24 @@
+{
+  "checkpoint_dir": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_droid",
+  "config_name": "pi05_droid_finetune",
+  "tested_trajectories": 8,
+  "tested_chunks_per_trajectory": 3,
+  "tested_seeds": [
+    0,
+    1,
+    2
+  ],
+  "num_comparisons": 72,
+  "same_left_max_abs_delta": 0.0,
+  "same_right_max_abs_delta": 0.0,
+  "swap_left_max_abs_delta": 0.0,
+  "swap_right_max_abs_delta": 0.0,
+  "swap_margin_max_abs_delta": 0.0,
+  "swap_prediction_agreement": 1.0,
+  "tolerance": 1e-06,
+  "same_prompt_pass": true,
+  "batch_order_swap_pass": true,
+  "paired_noise_by_construction": true,
+  "paired_noise_implementation": "Pi0.score_actions samples one times/noises tensor and duplicates it across the two candidates",
+  "elapsed_seconds": 49.56824950699229
+}

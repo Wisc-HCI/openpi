@@ -1,0 +1,17 @@
+decision,pair_type,num_pairs,both_correct_rate,desired_prediction_relation_rate
+10pct,same_target_side_color_swap,12,0.6666666666666666,0.75
+10pct,same_target_color_side_swap,12,0.5833333333333334,0.5833333333333334
+20pct,same_target_side_color_swap,12,0.5833333333333334,0.8333333333333334
+20pct,same_target_color_side_swap,12,0.3333333333333333,0.3333333333333333
+30pct,same_target_side_color_swap,12,0.5,1.0
+30pct,same_target_color_side_swap,12,0.0,0.0
+40pct,same_target_side_color_swap,12,0.5,1.0
+40pct,same_target_color_side_swap,12,0.0,0.0
+100pct,same_target_side_color_swap,12,0.5,1.0
+100pct,same_target_color_side_swap,12,0.0,0.0
+flat,same_target_side_color_swap,12,0.5,1.0
+flat,same_target_color_side_swap,12,0.0,0.0
+linear,same_target_side_color_swap,12,0.5,1.0
+linear,same_target_color_side_swap,12,0.0,0.0
+exponential,same_target_side_color_swap,12,0.5,1.0
+exponential,same_target_color_side_swap,12,0.0,0.0

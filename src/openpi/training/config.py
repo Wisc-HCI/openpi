@@ -761,6 +761,29 @@ _CONFIGS = [
         pytorch_weight_path="/path/to/your/pytorch_weight_path",
         num_train_steps=30_000,
     ),
+    TrainConfig(
+        # Fine-tune the released pi0.5-LIBERO policy on the custom two-object
+        # SpaceMouse dataset. Since the robot, controller, and 7-D action space
+        # are unchanged, reuse the released LIBERO normalization statistics.
+        name="pi05_libero_legibility_finetune",
+        model=pi0_config.Pi0Config(pi05=True, action_horizon=10, discrete_state_input=False),
+        data=LeRobotLiberoDataConfig(
+            repo_id="Wisc-HCI/libero_legibility_v1",
+            base_config=DataConfig(prompt_from_task=True),
+            extra_delta_transform=False,
+            assets=AssetsConfig(
+                assets_dir="gs://openpi-assets/checkpoints/pi05_libero/assets",
+                asset_id="physical-intelligence/libero",
+            ),
+        ),
+        weight_loader=weight_loaders.CheckpointWeightLoader(
+            "gs://openpi-assets/checkpoints/pi05_libero/params"
+        ),
+        num_train_steps=20_000,
+        batch_size=32,
+        save_interval=1_000,
+        keep_period=5_000,
+    ),
     #
     # Fine-tuning Aloha configs.
     #

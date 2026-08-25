@@ -1,0 +1,30 @@
+{
+  "checkpoint_dir": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_base",
+  "data_dir": "/home/hci-lab/repos/droid/data",
+  "train_date_dir": "/home/hci-lab/repos/droid/datastore/kindred/2026-08-09",
+  "test_date_dir": "/tmp/spatial_legibility_new8_20260817",
+  "output_dir": "/home/hci-lab/repos/openpi/artifacts/spatial_legibility_controlled_alpha_0_2_4_pi05_base_h16",
+  "config_name": "pi05_droid_finetune",
+  "date": "2026-08-09",
+  "num_samples": 8,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_min": 0.3,
+  "tau_max": 0.7,
+  "action_dims": 8,
+  "split": "test",
+  "max_episodes": null,
+  "controlled_test": false,
+  "overwrite": true,
+  "jax_devices": [
+    "cuda:0"
+  ],
+  "candidate_instructions": [
+    "pick up the left block",
+    "pick up the right block"
+  ],
+  "evidence_timestamp": "chunk stop; no future-action leakage"
+}

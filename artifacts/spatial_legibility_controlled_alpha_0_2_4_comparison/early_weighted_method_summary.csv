@@ -1,0 +1,4 @@
+method,overall_accuracy,left_accuracy,right_accuracy,seed_pooled_accuracy,left_seed_pooled_accuracy,right_seed_pooled_accuracy
+flat,0.5,1.0,0.0,0.5,1.0,0.0
+linear,0.5,1.0,0.0,0.5,1.0,0.0
+exponential,0.5,1.0,0.0,0.5,1.0,0.0

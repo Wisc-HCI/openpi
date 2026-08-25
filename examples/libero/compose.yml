@@ -15,6 +15,10 @@ services:
     volumes:
       - $PWD:/app
       - ../../data:/data
+      # Large formal evaluations can be redirected to a high-capacity disk by
+      # exporting LIBERO_EVAL_ROOT on the host. The container always writes to
+      # /eval_artifacts, keeping metadata paths stable across runs.
+      - ${LIBERO_EVAL_ROOT:-$PWD/artifacts}:/eval_artifacts
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
     environment:
       - CLIENT_ARGS
@@ -43,9 +47,9 @@ services:
       - $PWD:/app
       - ${OPENPI_DATA_HOME:-~/.cache/openpi}:/openpi_assets
     environment:
-      - SERVER_ARGS
-      - OPENPI_DATA_HOME=/openpi_assets
-      - IS_DOCKER=true
+      SERVER_ARGS: "${SERVER_ARGS:---env LIBERO}"
+      OPENPI_DATA_HOME: /openpi_assets
+      IS_DOCKER: "true"
 
     # Comment out this block if not running on a machine with GPUs.
     deploy:

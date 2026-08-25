@@ -1,0 +1,56 @@
+{
+  "checkpoint_dir": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_base",
+  "config_name": "pi05_droid_finetune",
+  "num_samples": 8,
+  "num_seeds": 3,
+  "tau_min": 0.3,
+  "tau_max": 0.7,
+  "action_dims": 8,
+  "posterior_temperature": 0.008912509381337459,
+  "geometry_logit_multiplier": 51.05049999754065,
+  "split_summary": {
+    "train": {
+      "n_trajectories": 32,
+      "pregrasp_local_accuracy": 0.6033482142857143,
+      "pregrasp_final_accuracy": 0.59375,
+      "full_final_accuracy": 0.59375,
+      "model_early_auc_mean": 0.5522018599943951,
+      "model_pregrasp_final_belief_mean": 0.5723163715251218,
+      "model_full_final_belief_mean": 0.5677916040402252,
+      "geometry_early_auc_mean": 0.6760868780431715,
+      "geometry_pregrasp_final_accuracy": 1.0,
+      "mean_pregrasp_true_energy": 0.180898608343624,
+      "mean_seed_sign_agreement": 0.8345982142857142,
+      "action_quantile_outside_fraction": 0.009282905142104201,
+      "state_quantile_outside_fraction": 0.003942566180215604,
+      "joint_velocity_l2_mean": 0.5144288285628867
+    },
+    "test": {
+      "n_trajectories": 8,
+      "pregrasp_local_accuracy": 0.5311147186147187,
+      "pregrasp_final_accuracy": 0.5,
+      "full_final_accuracy": 0.5,
+      "model_early_auc_mean": 0.5335649125305955,
+      "model_pregrasp_final_belief_mean": 0.504377400535619,
+      "model_full_final_belief_mean": 0.5139062166746012,
+      "geometry_early_auc_mean": 0.8379935711733213,
+      "geometry_pregrasp_final_accuracy": 1.0,
+      "mean_pregrasp_true_energy": 0.16582809897382017,
+      "mean_seed_sign_agreement": 0.8233826358826359,
+      "action_quantile_outside_fraction": 0.0031826393872533935,
+      "state_quantile_outside_fraction": 0.0,
+      "joint_velocity_l2_mean": 0.4826720062911827
+    }
+  },
+  "heldout_to_train_true_energy_ratio": 0.9166908495991477,
+  "target_distribution": {
+    "heldout_targets_inside_global_train_box": 7,
+    "heldout_target_count": 8,
+    "max_target_box_excess_m": 0.0019151568412780762,
+    "nearest_same_side_train_target_m_min": 0.004608044527954979,
+    "nearest_same_side_train_target_m_max": 0.030838250503577216
+  },
+  "test_spearman_path_ratio_vs_early_auc": -0.19047619047619052,
+  "test_spearman_line_deviation_vs_early_auc": -0.30952380952380953,
+  "test_spearman_geometry_vs_vla_auc": 0.4285714285714286
+}

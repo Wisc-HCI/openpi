@@ -1,0 +1,42 @@
+{
+  "checkpoint_dir": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_droid",
+  "num_trajectories": 24,
+  "num_seeds": 10,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "num_samples_per_seed": 8,
+  "exponential_alpha": 3.0,
+  "margin_definition": "energy_blue - energy_red; positive supports red",
+  "analysis_phase": "pregrasp only",
+  "prefix_interpolation": "piecewise-linear cumulative margin between chunk-stop progress points",
+  "early_correct_definition": "correct at any of 20%, 30%, or 40%",
+  "late_reversal_definition": "early_correct and incorrect at 100%",
+  "early_correct_count": 10,
+  "late_reversal_count": 1,
+  "flat_stable_prediction_count_80pct": 22,
+  "first_chunk_mean_margin_blue_minus_red": 0.023527297998468078,
+  "first_chunk_predicted_blue_count": 6,
+  "first_chunk_correct_count": 10,
+  "final_chunk_predicted_blue_count": 12,
+  "final_chunk_correct_count": 24,
+  "balanced_design": {
+    "target_blue": 12,
+    "target_red": 12,
+    "target_left": 12,
+    "target_right": 12,
+    "blue_side_left": 12,
+    "blue_side_right": 12,
+    "layout_L1": 12,
+    "layout_L3": 12
+  }
+}

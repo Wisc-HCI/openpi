@@ -1,0 +1,35 @@
+{
+  "checkpoint_dir": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_droid",
+  "data_dir": "/home/hci-lab/repos/droid/data/spatial_legibility_controlled/success/2026-08-17",
+  "output_dir": "/home/hci-lab/repos/openpi/artifacts/spatial_legibility_camera_adjusted_latest_pair_pi05_droid_h16/visual_flip",
+  "config_name": "pi05_droid_finetune",
+  "num_samples": 8,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "tau_min": 0.3,
+  "tau_max": 0.7,
+  "action_dims": 8,
+  "overwrite": true,
+  "episodes": [
+    "2026_08_17_02_29_03_938361_L1_left_C2",
+    "2026_08_17_02_30_47_786891_L1_right_C2"
+  ],
+  "conditions": [
+    "original",
+    "exterior_hflip",
+    "wrist_hflip",
+    "both_hflip"
+  ],
+  "pairing": "same state, action, RNG key, flow timesteps, and noise across visual conditions",
+  "margin": "energy_left - energy_right; positive supports right"
+}

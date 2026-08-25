@@ -1,0 +1,13 @@
+visual_condition,method,base_frame_accuracy,camera_frame_accuracy,base_frame_seed_pooled_accuracy,camera_frame_seed_pooled_accuracy
+original,flat,0.5,0.5,0.5,0.5
+original,linear,0.5,0.5,0.6,0.4
+original,exponential,1.0,0.0,0.75,0.25
+exterior_hflip,flat,1.0,0.0,0.85,0.15
+exterior_hflip,linear,1.0,0.0,0.9,0.1
+exterior_hflip,exponential,1.0,0.0,0.95,0.05
+wrist_hflip,flat,0.5,0.5,0.55,0.45
+wrist_hflip,linear,0.5,0.5,0.6,0.4
+wrist_hflip,exponential,0.5,0.5,0.65,0.35
+both_hflip,flat,0.5,0.5,0.5,0.5
+both_hflip,linear,1.0,0.0,0.9,0.1
+both_hflip,exponential,1.0,0.0,0.95,0.05

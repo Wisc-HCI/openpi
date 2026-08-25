@@ -26,6 +26,8 @@ def create_trained_policy(
     negative_prompt: str | None = None,
     guidance_scale: float = 1.0,
     observer_config: _observer.ObserverConfig | None = None,
+    guidance_decay: float = 1.0,
+    guidance_zero_first_chunk: bool = False,
 ) -> _policy.Policy:
     """Create a policy from a trained checkpoint.
 
@@ -44,6 +46,8 @@ def create_trained_policy(
         negative_prompt: Fixed negative instruction for two-instruction bipolar guidance. If None, guidance is disabled.
         guidance_scale: Extrapolation strength in ``v_pos + scale * (v_pos - v_neg)``.
         observer_config: Online belief settings. If None, residual scoring and belief updates are disabled.
+        guidance_decay: Multiplicative guidance decay applied between policy queries.
+        guidance_zero_first_chunk: If true, disable guidance for the first chunk after reset.
 
     Note:
         The function automatically detects whether the model is PyTorch-based by checking for the
@@ -66,6 +70,8 @@ def create_trained_policy(
         raise ValueError("Fixed-negative guidance is supported only for Pi0/Pi0.5 models")
     if guidance_scale < 0:
         raise ValueError(f"guidance_scale must be non-negative, got {guidance_scale}")
+    if not 0.0 <= guidance_decay <= 1.0:
+        raise ValueError(f"guidance_decay must be in [0, 1], got {guidance_decay}")
     checkpoint_dir = download.maybe_download(str(checkpoint_dir))
 
     # Check if this is a PyTorch model by looking for model.safetensors
@@ -141,4 +147,6 @@ def create_trained_policy(
         pytorch_device=pytorch_device if is_pytorch else None,
         negative_prompt=negative_prompt if negative_prompt_enabled else None,
         observer_config=observer_config,
+        guidance_decay=guidance_decay,
+        guidance_zero_first_chunk=guidance_zero_first_chunk,
     )

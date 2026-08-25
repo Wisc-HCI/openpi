@@ -1,0 +1,274 @@
+{
+  "accuracy": {
+    "20": 0.5,
+    "30": 0.625,
+    "40": 0.575
+  },
+  "all_collision_free": true,
+  "all_preregistered_criteria_passed": false,
+  "balanced_accuracy": {
+    "20": 0.5,
+    "30": 0.625,
+    "40": 0.575
+  },
+  "checkpoint_manifest_sha256": "52ee2b0ee4b640e775c665514feabacf7c1427b8bf699b51ea877e5b8f45c8e5",
+  "episode_count": 40,
+  "frozen_geometry_sha256": "456da6d01af8ec7a03e0ec7d694e9b96d0c4da7d35fbca7d0715852033cb92c9",
+  "interpretation_guard": "Failures are reported as failures; geometry and levels were not retuned from pi05 scores.",
+  "level_means": {
+    "A1": {
+      "C20": 0.00012594320484239554,
+      "C30": 0.0008453116297730026,
+      "C40": 0.0011123166824586438,
+      "actual_path_length_m": 0.22150249365766858,
+      "excess_path_length": 0.00894230586460135
+    },
+    "L0": {
+      "C20": 0.0013101670397250242,
+      "C30": 0.0021161483440605977,
+      "C40": 0.0034401332994552867,
+      "actual_path_length_m": 0.2195365066470118,
+      "excess_path_length": 0.0
+    },
+    "L1": {
+      "C20": 0.0014765629830576217,
+      "C30": 0.002406868817002637,
+      "C40": 0.00374476297150395,
+      "actual_path_length_m": 0.22124672751947652,
+      "excess_path_length": 0.00777945953386066
+    },
+    "L2": {
+      "C20": 0.002552341013140026,
+      "C30": 0.004467131036533033,
+      "C40": 0.004359224311373678,
+      "actual_path_length_m": 0.22601583202948766,
+      "excess_path_length": 0.02947598999621815
+    },
+    "L3": {
+      "C20": 0.002511718206552448,
+      "C30": 0.004563346900013627,
+      "C40": 0.004228601159565239,
+      "actual_path_length_m": 0.23314150130525182,
+      "excess_path_length": 0.061895927726592616
+    }
+  },
+  "main_L0_L3_accuracy": {
+    "20": 0.5,
+    "30": 0.625,
+    "40": 0.59375
+  },
+  "main_L0_L3_balanced_accuracy": {
+    "20": 0.5,
+    "30": 0.625,
+    "40": 0.59375
+  },
+  "matched_geometry": {
+    "all_A1_below_L0": true,
+    "all_L0_ambiguous_at_10pct": true,
+    "all_collision_free": true,
+    "all_deviation_monotone": true,
+    "all_geometric_confidence_monotone": true,
+    "all_groups_passed": true,
+    "all_path_length_monotone": true,
+    "groups": [
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G1",
+        "layout_id": "A",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "milk"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G1",
+        "layout_id": "A",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "orange_juice"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G1",
+        "layout_id": "B",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "milk"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G1",
+        "layout_id": "B",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "orange_juice"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G2",
+        "layout_id": "A",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "milk"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G2",
+        "layout_id": "A",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "orange_juice"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G2",
+        "layout_id": "B",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "milk"
+      },
+      {
+        "checks": {
+          "A1_geometric_confidence30_below_L0": true,
+          "L0_not_near_certain_at_10pct": true,
+          "all_collision_free": true,
+          "deviation_L0_to_L3_increasing": true,
+          "geometric_confidence30_L0_to_L3_increasing": true,
+          "path_length_L0_to_L3_increasing": true
+        },
+        "geometry_id": "G2",
+        "layout_id": "B",
+        "passed": true,
+        "simulator_seed": 0,
+        "target_identity": "orange_juice"
+      }
+    ],
+    "matched_group_count": 8
+  },
+  "mean_L0_geometric_confidence_10": 0.5230028717730756,
+  "mean_L3_C30_seed_sign_agreement": 0.9025000000000001,
+  "mean_geometric_confidence_30_by_level": {
+    "A1": 0.5326077248958578,
+    "L0": 0.6231223663615931,
+    "L1": 0.6960977488573905,
+    "L2": 0.7512824203610251,
+    "L3": 0.7907341578347653
+  },
+  "minimum_L3_C30_seed_sign_agreement": 0.54,
+  "monotonicity": {
+    "L3_above_L0_fraction": 0.5,
+    "adjacent_order_success_fraction": 0.625,
+    "matched_group_count": 8,
+    "mean_A1_minus_L0": -0.001270836714287595,
+    "mean_L3_minus_L0": 0.0024471985559530304,
+    "mean_spearman_rho": 0.22499999999999998,
+    "median_L3_minus_L0": 0.0025418988525619073,
+    "median_spearman_rho": 0.19999999999999998,
+    "undefined_spearman_group_count": 0
+  },
+  "monotonicity_by_endpoint": {
+    "C20": {
+      "L3_above_L0_fraction": 0.375,
+      "adjacent_order_success_fraction": 0.4583333333333333,
+      "matched_group_count": 8,
+      "mean_A1_minus_L0": -0.0011842238348826286,
+      "mean_L3_minus_L0": 0.0012015511668274238,
+      "mean_spearman_rho": -0.05,
+      "median_L3_minus_L0": -0.0016104451339436412,
+      "median_spearman_rho": -0.09999999999999999,
+      "undefined_spearman_group_count": 0
+    },
+    "C30": {
+      "L3_above_L0_fraction": 0.5,
+      "adjacent_order_success_fraction": 0.625,
+      "matched_group_count": 8,
+      "mean_A1_minus_L0": -0.001270836714287595,
+      "mean_L3_minus_L0": 0.0024471985559530304,
+      "mean_spearman_rho": 0.22499999999999998,
+      "median_L3_minus_L0": 0.0025418988525619073,
+      "median_spearman_rho": 0.19999999999999998,
+      "undefined_spearman_group_count": 0
+    },
+    "C40": {
+      "L3_above_L0_fraction": 0.5,
+      "adjacent_order_success_fraction": 0.5416666666666666,
+      "matched_group_count": 8,
+      "mean_A1_minus_L0": -0.002327816616996643,
+      "mean_L3_minus_L0": 0.00078846786010995,
+      "mean_spearman_rho": 0.025000000000000022,
+      "median_L3_minus_L0": 0.0025109526676593075,
+      "median_spearman_rho": 0.0,
+      "undefined_spearman_group_count": 0
+    }
+  },
+  "preregistered_criteria": {
+    "L3_above_L0_at_least_75pct": false,
+    "adjacent_order_success_at_least_75pct": false,
+    "all_executed_trajectories_collision_free": true,
+    "every_L3_condition_seed_sign_agreement_at_least_80pct": false,
+    "geometry_A1_confidence_below_L0_in_every_matched_group": true,
+    "geometry_L0_not_near_certain_at_10pct_in_every_matched_group": true,
+    "geometry_L0_to_L3_confidence_increasing_in_every_matched_group": true,
+    "geometry_L0_to_L3_deviation_increasing_in_every_matched_group": true,
+    "geometry_L0_to_L3_path_cost_increasing_in_every_matched_group": true,
+    "main_L0_L3_balanced_accuracy_20_at_least_70pct": false,
+    "main_L0_L3_balanced_accuracy_30_at_least_80pct": false,
+    "main_L0_L3_balanced_accuracy_40_at_least_80pct": false,
+    "mean_spearman_rho_at_least_0_6": false,
+    "scripted_task_success_at_least_95pct": true
+  },
+  "schema_version": 1,
+  "simulator_seeds": [
+    0
+  ],
+  "task_success_rate": 1.0
+}

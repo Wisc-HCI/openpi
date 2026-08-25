@@ -28,6 +28,8 @@ FAILURE_CONDITIONS = (
     "C3_extreme_exaggeration",
 )
 
+CONTROLLED_CONDITIONS = ("C0", "C1", "C2", "C3", "C4")
+
 
 @dataclasses.dataclass(frozen=True)
 class EpisodeSpec:
@@ -122,6 +124,60 @@ def discover_episode_pairs(root: Path | str, split: str) -> list[EpisodeSpec]:
                     episode_id=path.parent.name,
                     instruction=instruction,
                     target_side=_target_side(instruction),
+                    pair_index=pair_index,
+                    condition=condition,
+                )
+            )
+    return specs
+
+
+def discover_controlled_condition_pairs(root: Path | str, split: str = "test") -> list[EpisodeSpec]:
+    """Discover metadata-labelled left/right pairs from a controlled C0--C4 study."""
+    if split != "test":
+        raise ValueError(f"Controlled trajectories must use split='test', got {split!r}")
+    root = Path(root)
+    paths = sorted(root.glob("*/trajectory.h5"))
+    if not paths:
+        raise FileNotFoundError(f"No trajectory.h5 files found below {root}")
+
+    grouped: dict[str, dict[str, tuple[Path, str]]] = {}
+    layout_ids = set()
+    for path in paths:
+        metadata_path = path.parent / "metadata_openpi.json"
+        metadata = json.loads(metadata_path.read_text())
+        condition = str(metadata.get("condition", ""))
+        instruction = str(metadata.get("language_instruction") or metadata.get("current_task") or "")
+        target_side = str(metadata.get("target_side") or _target_side(instruction))
+        if condition not in CONTROLLED_CONDITIONS:
+            raise ValueError(f"Unexpected controlled condition {condition!r} in {metadata_path}")
+        if target_side != _target_side(instruction):
+            raise ValueError(
+                f"Target side {target_side!r} disagrees with instruction {instruction!r} in {metadata_path}"
+            )
+        if target_side in grouped.setdefault(condition, {}):
+            raise ValueError(f"Duplicate {condition}/{target_side} trajectory below {root}")
+        grouped[condition][target_side] = (path, instruction)
+        layout_ids.add(str(metadata.get("layout_id", "")))
+
+    if set(grouped) != set(CONTROLLED_CONDITIONS):
+        raise ValueError(f"Controlled data must cover {CONTROLLED_CONDITIONS}, got {sorted(grouped)}")
+    if layout_ids != {"L0"}:
+        raise ValueError(f"Expected one fixed L0 layout, got {sorted(layout_ids)}")
+
+    specs = []
+    for pair_index, condition in enumerate(CONTROLLED_CONDITIONS):
+        pair = grouped[condition]
+        if set(pair) != {"left", "right"}:
+            raise ValueError(f"Expected one left/right pair for {condition}, got {sorted(pair)}")
+        for target_side in ("left", "right"):
+            path, instruction = pair[target_side]
+            specs.append(
+                EpisodeSpec(
+                    path=path,
+                    split=split,
+                    episode_id=path.parent.name,
+                    instruction=instruction,
+                    target_side=target_side,
                     pair_index=pair_index,
                     condition=condition,
                 )

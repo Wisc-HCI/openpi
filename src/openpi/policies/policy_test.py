@@ -90,6 +90,7 @@ def test_online_observer_updates_belief_and_guidance_scale(monkeypatch):
             belief_weighted=True,
             guidance_lambda=1.0,
         ),
+        guidance_zero_first_chunk=True,
     )
     observation = {
         "image": {"camera": np.zeros((2, 2, 3), dtype=np.float32)},
@@ -108,15 +109,55 @@ def test_online_observer_updates_belief_and_guidance_scale(monkeypatch):
     second = policy.infer(second_observation)
 
     assert first["legibility"]["belief_negative"] == pytest.approx(0.5)
-    assert first["legibility"]["effective_guidance_scale"] == pytest.approx(0.5)
+    assert first["legibility"]["effective_guidance_scale"] == pytest.approx(0.0)
+    assert first["guidance"]["query_index"] == 0
     assert second["legibility"]["belief_negative"] < 0.5
     assert second["legibility"]["effective_guidance_scale"] == pytest.approx(second["legibility"]["belief_negative"])
+    assert second["guidance"]["query_index"] == 1
     assert second["legibility"]["observer_updates"] == 1
     _, _, scored_actions, executed_steps, score_kwargs = model.score_call
     np.testing.assert_allclose(scored_actions[0, 0], 0.25)
     np.testing.assert_allclose(scored_actions[0, 1], 0.0)
     assert int(executed_steps) == 1
     assert score_kwargs["num_samples"] == 2
+
+
+def test_guidance_decay_is_per_query_and_resets(monkeypatch):
+    model = _FakeModel()
+    monkeypatch.setattr(_policy.nnx_utils, "module_jit", lambda method, **kwargs: method)
+
+    def tokenize_prompt(data):
+        prompt = data.pop("prompt")
+        token = 1 if prompt == "positive instruction" else 2
+        return {
+            **data,
+            "tokenized_prompt": np.asarray([token], dtype=np.int32),
+            "tokenized_prompt_mask": np.asarray([True]),
+        }
+
+    policy = _policy.Policy(
+        model,
+        transforms=[tokenize_prompt],
+        sample_kwargs={"guidance_scale": 2.0},
+        negative_prompt="negative instruction",
+        guidance_decay=0.5,
+    )
+    observation = {
+        "image": {"camera": np.zeros((2, 2, 3), dtype=np.float32)},
+        "image_mask": {"camera": np.ones((), dtype=np.bool_)},
+        "state": np.zeros(3, dtype=np.float32),
+        "prompt": "positive instruction",
+        "sampling_seed": 123,
+    }
+
+    first = policy.infer({**observation, "observer_reset": True})
+    second = policy.infer(observation)
+    reset = policy.infer({**observation, "observer_reset": True})
+
+    assert first["guidance"]["effective_guidance_scale"] == pytest.approx(2.0)
+    assert second["guidance"]["effective_guidance_scale"] == pytest.approx(1.0)
+    assert reset["guidance"]["effective_guidance_scale"] == pytest.approx(2.0)
+    assert first["guidance"]["sampling_seed"] == 123
 
 
 @pytest.mark.manual

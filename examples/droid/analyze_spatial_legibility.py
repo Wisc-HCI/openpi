@@ -602,7 +602,7 @@ def _write_report(
             ("mean_seed_sign_agreement", "Seed sign agree."),
         ],
     )
-    text = f"""# Spatial legibility evaluation: pi0.5-DROID checkpoint 39999
+    text = f"""# Spatial legibility evaluation: {summary["config_name"]}
 
 ## Evaluation protocol
 
@@ -714,6 +714,7 @@ def main(args: Args) -> None:
     test_rows = [row for row in episode_rows if row["split"] == "test"]
     summary = {
         "checkpoint_dir": config["checkpoint_dir"],
+        "config_name": config["config_name"],
         "num_samples": config["num_samples"],
         "num_seeds": len(config["seeds"]),
         "tau_min": config["tau_min"],

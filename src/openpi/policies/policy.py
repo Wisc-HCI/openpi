@@ -36,6 +36,8 @@ class Policy(BasePolicy):
         is_pytorch: bool = False,
         negative_prompt: str | None = None,
         observer_config: _observer.ObserverConfig | None = None,
+        guidance_decay: float = 1.0,
+        guidance_zero_first_chunk: bool = False,
     ):
         """Initialize the Policy.
 
@@ -51,6 +53,8 @@ class Policy(BasePolicy):
             is_pytorch: Whether the model is a PyTorch model. If False, assumes JAX model.
             negative_prompt: Fixed negative instruction for JAX bipolar guidance. If None, sampling is unchanged.
             observer_config: Online two-instruction observer settings. If None, belief updates are disabled.
+            guidance_decay: Multiplicative guidance decay applied once per policy query / executed action segment.
+            guidance_zero_first_chunk: If true, sample the first chunk after reset without guidance.
         """
         if negative_prompt is not None and not negative_prompt.strip():
             raise ValueError("negative_prompt must be non-empty when provided")
@@ -58,6 +62,8 @@ class Policy(BasePolicy):
             raise ValueError("Fixed-negative guidance is currently implemented only for JAX Pi0/Pi0.5 models")
         if observer_config is not None and negative_prompt is None:
             raise ValueError("observer_config requires a negative_prompt")
+        if not 0.0 <= guidance_decay <= 1.0:
+            raise ValueError(f"guidance_decay must be in [0, 1], got {guidance_decay}")
 
         self._model = model
         self._input_transform = _transforms.compose(transforms)
@@ -68,6 +74,10 @@ class Policy(BasePolicy):
         self._pytorch_device = pytorch_device
         self._negative_prompt = negative_prompt
         self._observer_config = observer_config
+        self._guidance_decay = float(guidance_decay)
+        self._guidance_zero_first_chunk = guidance_zero_first_chunk
+        self._guidance_query_index = 0
+        self._guidance_positive_prompt = None
         self._belief_filter = (
             _observer.BeliefFilter(observer_config.temperature) if observer_config is not None else None
         )
@@ -228,13 +238,24 @@ class Policy(BasePolicy):
         raw_observation = self._copy_tree(obs)
         executed_actions = raw_observation.pop("previous_executed_actions", None)
         observer_reset = bool(np.asarray(raw_observation.pop("observer_reset", False)).item())
+        sampling_seed_value = raw_observation.pop("sampling_seed", None)
+        sampling_seed = None
+        if sampling_seed_value is not None:
+            sampling_seed_array = np.asarray(sampling_seed_value)
+            if sampling_seed_array.shape != ():
+                raise ValueError(f"sampling_seed must be a scalar, got shape {sampling_seed_array.shape}")
+            sampling_seed = int(sampling_seed_array.item())
+            if not 0 <= sampling_seed <= np.iinfo(np.uint32).max:
+                raise ValueError(f"sampling_seed must be in [0, 2**32 - 1], got {sampling_seed}")
         positive_prompt = self._prompt_text(raw_observation.get("prompt"))
+
+        prompt_changed = self._guidance_positive_prompt is not None and positive_prompt != self._guidance_positive_prompt
+        if observer_reset or prompt_changed:
+            self._guidance_query_index = 0
 
         observer_score_ms = 0.0
         if self._observer_config is not None:
-            if observer_reset or (
-                self._observer_positive_prompt is not None and positive_prompt != self._observer_positive_prompt
-            ):
+            if observer_reset or prompt_changed:
                 self._reset_observer(positive_prompt)
             if executed_actions is not None and not observer_reset:
                 observer_start = time.monotonic()
@@ -244,10 +265,13 @@ class Policy(BasePolicy):
         # Make copies since transformations may modify their inputs in place.
         inputs = self._transform_inputs(raw_observation)
         sample_kwargs = dict(self._sample_kwargs)
-        effective_guidance_scale = float(sample_kwargs.get("guidance_scale", 0.0))
+        initial_guidance_scale = float(sample_kwargs.get("guidance_scale", 0.0))
+        effective_guidance_scale = initial_guidance_scale * self._guidance_decay**self._guidance_query_index
         if self._observer_config is not None and self._observer_config.belief_weighted:
             assert self._belief_filter is not None
             effective_guidance_scale = self._observer_config.guidance_lambda * self._belief_filter.negative
+        if self._guidance_zero_first_chunk and self._guidance_query_index == 0:
+            effective_guidance_scale = 0.0
 
         negative_inputs = None
         needs_negative_inputs = effective_guidance_scale > 0 or (
@@ -265,8 +289,13 @@ class Policy(BasePolicy):
             inputs = self._batch_jax_inputs(inputs)
             if negative_inputs is not None:
                 negative_inputs = self._batch_jax_inputs(negative_inputs)
-            self._rng, sample_rng_or_pytorch_device = jax.random.split(self._rng)
+            if sampling_seed is None:
+                self._rng, sample_rng_or_pytorch_device = jax.random.split(self._rng)
+            else:
+                sample_rng_or_pytorch_device = jax.random.key(sampling_seed)
         else:
+            if sampling_seed is not None:
+                raise ValueError("Request-level sampling_seed is currently implemented only for JAX policies")
             # Convert inputs to PyTorch tensors and move to correct device
             inputs = jax.tree.map(lambda x: torch.from_numpy(np.array(x)).to(self._pytorch_device)[None, ...], inputs)
             sample_rng_or_pytorch_device = self._pytorch_device
@@ -305,6 +334,14 @@ class Policy(BasePolicy):
             "infer_ms": model_time * 1000,
             "observer_score_ms": observer_score_ms,
         }
+        outputs["guidance"] = {
+            "query_index": self._guidance_query_index,
+            "initial_guidance_scale": initial_guidance_scale,
+            "guidance_decay": self._guidance_decay,
+            "zero_first_chunk": self._guidance_zero_first_chunk,
+            "effective_guidance_scale": effective_guidance_scale,
+            "sampling_seed": sampling_seed,
+        }
         if self._observer_config is not None:
             assert self._belief_filter is not None
             self._observer_previous_raw_observation = self._copy_tree(raw_observation)
@@ -322,6 +359,8 @@ class Policy(BasePolicy):
                     None if self._observer_last_energies is None else float(self._observer_last_energies[1])
                 ),
             }
+        self._guidance_query_index += 1
+        self._guidance_positive_prompt = positive_prompt
         return outputs
 
     @property

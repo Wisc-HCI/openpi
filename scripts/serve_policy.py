@@ -1,6 +1,7 @@
 import dataclasses
 import enum
 import logging
+import pathlib
 import socket
 
 import tyro
@@ -49,8 +50,14 @@ class Args:
 
     # If provided, enables two-instruction bipolar guidance using this fixed negative instruction.
     negative_prompt: str | None = None
+    # Whitespace-safe alternative for Docker SERVER_ARGS: read the negative prompt from this text file.
+    negative_prompt_file: str | None = None
     # Extrapolation strength: v_pos + guidance_scale * (v_pos - v_neg).
     guidance_scale: float = 1.0
+    # Legibility-Diffuser-style decay applied once after each executed action segment.
+    guidance_decay: float = 1.0
+    # If true, return an unguided first chunk and begin guidance after observing it.
+    guidance_zero_first_chunk: bool = False
 
     # Set this to enable online residual scoring and recursive belief updates.
     belief_temperature: float | None = None
@@ -104,6 +111,8 @@ def create_default_policy(
     negative_prompt: str | None = None,
     guidance_scale: float = 1.0,
     observer_config: _observer.ObserverConfig | None = None,
+    guidance_decay: float = 1.0,
+    guidance_zero_first_chunk: bool = False,
 ) -> _policy.Policy:
     """Create a default policy for the given environment."""
     if checkpoint := DEFAULT_CHECKPOINT.get(env):
@@ -114,6 +123,8 @@ def create_default_policy(
             negative_prompt=negative_prompt,
             guidance_scale=guidance_scale,
             observer_config=observer_config,
+            guidance_decay=guidance_decay,
+            guidance_zero_first_chunk=guidance_zero_first_chunk,
         )
     raise ValueError(f"Unsupported environment mode: {env}")
 
@@ -133,6 +144,7 @@ def create_policy(args: Args) -> _policy.Policy:
             belief_weighted=args.belief_weighted,
             guidance_lambda=args.guidance_lambda,
         )
+    negative_prompt = _resolve_negative_prompt(args)
 
     match args.policy:
         case Checkpoint():
@@ -140,23 +152,43 @@ def create_policy(args: Args) -> _policy.Policy:
                 _config.get_config(args.policy.config),
                 args.policy.dir,
                 default_prompt=args.default_prompt,
-                negative_prompt=args.negative_prompt,
+                negative_prompt=negative_prompt,
                 guidance_scale=args.guidance_scale,
                 observer_config=observer_config,
+                guidance_decay=args.guidance_decay,
+                guidance_zero_first_chunk=args.guidance_zero_first_chunk,
             )
         case Default():
             return create_default_policy(
                 args.env,
                 default_prompt=args.default_prompt,
-                negative_prompt=args.negative_prompt,
+                negative_prompt=negative_prompt,
                 guidance_scale=args.guidance_scale,
                 observer_config=observer_config,
+                guidance_decay=args.guidance_decay,
+                guidance_zero_first_chunk=args.guidance_zero_first_chunk,
             )
 
 
 def main(args: Args) -> None:
     policy = create_policy(args)
-    policy_metadata = policy.metadata
+    negative_prompt = _resolve_negative_prompt(args)
+    policy_metadata = {
+        **policy.metadata,
+        "steering": {
+            "negative_prompt": negative_prompt,
+            "guidance_scale": args.guidance_scale,
+            "guidance_decay": args.guidance_decay,
+            "guidance_zero_first_chunk": args.guidance_zero_first_chunk,
+            "belief_temperature": args.belief_temperature,
+            "belief_samples": args.belief_samples,
+            "belief_tau_min": args.belief_tau_min,
+            "belief_tau_max": args.belief_tau_max,
+            "belief_action_dims": args.belief_action_dims,
+            "belief_weighted": args.belief_weighted,
+            "guidance_lambda": args.guidance_lambda,
+        },
+    }
 
     # Record the policy's behavior.
     if args.record:
@@ -173,6 +205,18 @@ def main(args: Args) -> None:
         metadata=policy_metadata,
     )
     server.serve_forever()
+
+
+def _resolve_negative_prompt(args: Args) -> str | None:
+    if args.negative_prompt is not None and args.negative_prompt_file is not None:
+        raise ValueError("Use only one of --negative-prompt and --negative-prompt-file")
+    if args.negative_prompt_file is None:
+        return args.negative_prompt
+    prompt_path = pathlib.Path(args.negative_prompt_file)
+    prompt = prompt_path.read_text(encoding="utf-8").strip()
+    if not prompt:
+        raise ValueError(f"negative prompt file is empty: {prompt_path}")
+    return prompt
 
 
 if __name__ == "__main__":

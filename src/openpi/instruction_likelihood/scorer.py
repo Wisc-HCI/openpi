@@ -55,6 +55,24 @@ class ChunkScores:
 
 
 @dataclasses.dataclass(frozen=True)
+class SeededChunkScores:
+    """Matched-noise residuals with an explicit, reproducible flow-seed axis.
+
+    ``residual`` has shape ``[seed, candidate, flow_timestep, noise_sample,
+    action_step, physical_action_dim]`` and ``noise`` has shape ``[seed,
+    flow_timestep, noise_sample, action_step, model_action_dim]``.  Keeping the
+    seed axis separate is important for sign-agreement and confidence-interval
+    calculations; treating several draws as one undifferentiated average would
+    make those stability diagnostics impossible.
+    """
+
+    residual: np.ndarray
+    normalized_actions: np.ndarray
+    noise: np.ndarray
+    seeds: np.ndarray
+
+
+@dataclasses.dataclass(frozen=True)
 class CacheValidation:
     max_absolute_difference: float
     mean_absolute_difference: float
@@ -76,6 +94,34 @@ def aggregate_residuals(residual: np.ndarray) -> np.ndarray:
     if residual.ndim != 6 or residual.shape[-1] != LIBERO_ACTION_DIM:
         raise ValueError(f"Expected [P,C,F,N,H,{LIBERO_ACTION_DIM}] residuals, got {residual.shape}")
     return np.mean(np.square(residual, dtype=np.float64), axis=(2, 3, 4, 5))
+
+
+def aggregate_seeded_residuals(residual: np.ndarray) -> np.ndarray:
+    """Reduce ``[prefix,seed,candidate,flow,draw,step,7]`` to ``[prefix,seed,candidate]``."""
+    residual = np.asarray(residual)
+    if residual.ndim != 7 or residual.shape[-1] != LIBERO_ACTION_DIM:
+        raise ValueError(f"Expected [P,S,C,F,N,H,{LIBERO_ACTION_DIM}] residuals, got {residual.shape}")
+    return np.mean(np.square(residual, dtype=np.float64), axis=(3, 4, 5, 6))
+
+
+def _seeded_common_noise(
+    seeds: np.ndarray,
+    *,
+    chunk_index: int,
+    flow_count: int,
+    noise_samples: int,
+    action_horizon: int,
+    model_action_dim: int,
+) -> np.ndarray:
+    """Generate independently addressable draws so resumed seed subsets are identical."""
+    return np.stack(
+        [
+            np.random.default_rng(np.random.SeedSequence([int(seed), chunk_index])).standard_normal(
+                (flow_count, noise_samples, action_horizon, model_action_dim), dtype=np.float32
+            )
+            for seed in seeds
+        ]
+    )
 
 
 def cumulative_posteriors(chunk_energy: np.ndarray, candidate_mask: np.ndarray, temperature: float) -> np.ndarray:
@@ -261,15 +307,64 @@ class Pi05InstructionLikelihoodScorer:
         return jax.tree.map(lambda value: jnp.repeat(value, repeats, axis=0), observation)
 
     def score_chunk(self, chunk: ActionChunk, instructions: Sequence[str], *, chunk_index: int) -> ChunkScores:
+        """Score one chunk using ``ResidualConfig.seed``.
+
+        This preserves the original API.  Experiments that need seed-level
+        uncertainty should call :meth:`score_chunk_seeds`, which shares each
+        candidate's expensive image/language prefix encoding across all seeds.
+        """
+        seeded = self.score_chunk_seeds(
+            chunk,
+            instructions,
+            chunk_index=chunk_index,
+            seeds=(self.config.seed,),
+        )
+        return ChunkScores(
+            residual=seeded.residual[0],
+            normalized_actions=seeded.normalized_actions,
+            noise=seeded.noise[0],
+        )
+
+    def score_chunk_seeds(
+        self,
+        chunk: ActionChunk,
+        instructions: Sequence[str],
+        *,
+        chunk_index: int,
+        seeds: Sequence[int],
+    ) -> SeededChunkScores:
+        """Score candidates under several independently seeded common-noise draws.
+
+        Every candidate receives bit-identical noise and flow timesteps for a
+        given seed.  Seed ``s`` uses ``SeedSequence([s, chunk_index])``, so a
+        resumed run can request only missing seeds without changing earlier
+        results.  Prefix KV caches are built once per candidate, not once per
+        seed.
+        """
         if not instructions:
             raise ValueError("At least one candidate instruction is required")
+        seed_values = np.asarray(tuple(seeds), dtype=np.int64)
+        if seed_values.ndim != 1 or len(seed_values) == 0:
+            raise ValueError("seeds must be a non-empty one-dimensional sequence")
+        if len(np.unique(seed_values)) != len(seed_values):
+            raise ValueError("seeds must be unique")
+        if np.any(seed_values < 0):
+            raise ValueError("seeds must be non-negative")
         flow_count = len(self.config.flow_timesteps)
-        total_evaluations = flow_count * self.config.noise_samples
-        rng = np.random.default_rng(np.random.SeedSequence([self.config.seed, chunk_index]))
-        common_noise = rng.standard_normal(
-            (flow_count, self.config.noise_samples, self.action_horizon, self.model_action_dim), dtype=np.float32
+        evaluations_per_seed = flow_count * self.config.noise_samples
+        common_noise = _seeded_common_noise(
+            seed_values,
+            chunk_index=chunk_index,
+            flow_count=flow_count,
+            noise_samples=self.config.noise_samples,
+            action_horizon=self.action_horizon,
+            model_action_dim=self.model_action_dim,
         )
-        times = np.repeat(np.asarray(self.config.flow_timesteps, dtype=np.float32), self.config.noise_samples)
+        total_evaluations = len(seed_values) * evaluations_per_seed
+        times = np.tile(
+            np.repeat(np.asarray(self.config.flow_timesteps, dtype=np.float32), self.config.noise_samples),
+            len(seed_values),
+        )
         flat_noise = common_noise.reshape(total_evaluations, self.action_horizon, self.model_action_dim)
         candidate_residuals: list[np.ndarray] = []
         normalized_actions: np.ndarray | None = None
@@ -305,15 +400,20 @@ class Pi05InstructionLikelihoodScorer:
                 pieces.append(np.asarray(residual[:valid_count, :, :LIBERO_ACTION_DIM], dtype=np.float32))
             candidate_residuals.append(
                 np.concatenate(pieces, axis=0).reshape(
-                    flow_count, self.config.noise_samples, self.action_horizon, LIBERO_ACTION_DIM
+                    len(seed_values),
+                    flow_count,
+                    self.config.noise_samples,
+                    self.action_horizon,
+                    LIBERO_ACTION_DIM,
                 )
             )
 
         assert normalized_actions is not None
-        return ChunkScores(
-            residual=np.stack(candidate_residuals),
+        return SeededChunkScores(
+            residual=np.stack(candidate_residuals, axis=1),
             normalized_actions=normalized_actions,
             noise=common_noise,
+            seeds=seed_values,
         )
 
     def validate_prefix_cache(

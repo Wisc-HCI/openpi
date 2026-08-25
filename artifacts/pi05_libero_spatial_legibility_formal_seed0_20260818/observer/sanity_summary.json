@@ -1,0 +1,193 @@
+{
+  "artifact_kind": "pi05_libero_spatial_legibility_sanity",
+  "candidate_identities": [
+    "milk",
+    "orange_juice"
+  ],
+  "candidate_order_passed": true,
+  "candidate_prompts": [
+    "pick up the milk and place it in the basket",
+    "pick up the orange juice and place it in the basket"
+  ],
+  "checkpoint": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_libero",
+  "checkpoint_manifest_sha256": "52ee2b0ee4b640e775c665514feabacf7c1427b8bf699b51ea877e5b8f45c8e5",
+  "common_noise_passed": true,
+  "episode_root": "/home/hci-lab/repos/openpi/artifacts/pi05_libero_spatial_legibility_formal_seed0_20260818/rollouts/episodes",
+  "episodes": [
+    {
+      "candidate_order_passed": true,
+      "common_noise_passed": true,
+      "endpoints": [
+        {
+          "candidate_order_max_absolute_difference": 0.0,
+          "candidate_order_passed": true,
+          "chunk_index": 0,
+          "common_noise_passed": true,
+          "endpoint": "initial",
+          "same_prompt_max_absolute_differences": [
+            0.0,
+            0.0
+          ],
+          "same_prompt_passed": true,
+          "semantic_support": {
+            "candidate_mean_energy": [
+              0.2413820710838555,
+              0.2094770252581548
+            ],
+            "mean_canonical_margin": -0.03190504582570072,
+            "preferred_identity": "orange_juice",
+            "truth_margin": {
+              "ci95_high": -0.03190504582570072,
+              "ci95_low": -0.03190504582570072,
+              "count": 1,
+              "mean": -0.03190504582570072,
+              "mean_sign_agreement": 1.0,
+              "standard_deviation": 0.0,
+              "true_support_fraction": 0.0
+            }
+          }
+        },
+        {
+          "candidate_order_max_absolute_difference": 0.0,
+          "candidate_order_passed": true,
+          "chunk_index": 9,
+          "common_noise_passed": true,
+          "endpoint": "final",
+          "same_prompt_max_absolute_differences": [
+            0.0,
+            0.0
+          ],
+          "same_prompt_passed": true,
+          "semantic_support": {
+            "candidate_mean_energy": [
+              0.2956711094585099,
+              0.3021358745426501
+            ],
+            "mean_canonical_margin": 0.006464765084140234,
+            "preferred_identity": "milk",
+            "truth_margin": {
+              "ci95_high": 0.006464765084140234,
+              "ci95_low": 0.006464765084140234,
+              "count": 1,
+              "mean": 0.006464765084140234,
+              "mean_sign_agreement": 1.0,
+              "standard_deviation": 0.0,
+              "true_support_fraction": 1.0
+            }
+          }
+        }
+      ],
+      "episode_id": "G1_layout-A_target-milk_level-L0_seed-0000",
+      "passed": true,
+      "same_prompt_passed": true,
+      "source_hdf5": "/home/hci-lab/repos/openpi/artifacts/pi05_libero_spatial_legibility_formal_seed0_20260818/rollouts/episodes/G1_layout-A_target-milk_level-L0_seed-0000.h5",
+      "source_hdf5_sha256": "abc9b91cdce1fbed8d0758702c1a4c864b76ad15661f2611957e7c20bfccb548",
+      "target_candidate_index": 0,
+      "target_identity": "milk"
+    },
+    {
+      "candidate_order_passed": true,
+      "common_noise_passed": true,
+      "endpoints": [
+        {
+          "candidate_order_max_absolute_difference": 0.0,
+          "candidate_order_passed": true,
+          "chunk_index": 0,
+          "common_noise_passed": true,
+          "endpoint": "initial",
+          "same_prompt_max_absolute_differences": [
+            0.0,
+            0.0
+          ],
+          "same_prompt_passed": true,
+          "semantic_support": {
+            "candidate_mean_energy": [
+              0.21268781676835974,
+              0.17782557855944423
+            ],
+            "mean_canonical_margin": -0.034862238208915514,
+            "preferred_identity": "orange_juice",
+            "truth_margin": {
+              "ci95_high": 0.034862238208915514,
+              "ci95_low": 0.034862238208915514,
+              "count": 1,
+              "mean": 0.034862238208915514,
+              "mean_sign_agreement": 1.0,
+              "standard_deviation": 0.0,
+              "true_support_fraction": 1.0
+            }
+          }
+        },
+        {
+          "candidate_order_max_absolute_difference": 0.0,
+          "candidate_order_passed": true,
+          "chunk_index": 9,
+          "common_noise_passed": true,
+          "endpoint": "final",
+          "same_prompt_max_absolute_differences": [
+            0.0,
+            0.0
+          ],
+          "same_prompt_passed": true,
+          "semantic_support": {
+            "candidate_mean_energy": [
+              0.2533948857884938,
+              0.2753979676390983
+            ],
+            "mean_canonical_margin": 0.02200308185060451,
+            "preferred_identity": "milk",
+            "truth_margin": {
+              "ci95_high": -0.02200308185060451,
+              "ci95_low": -0.02200308185060451,
+              "count": 1,
+              "mean": -0.02200308185060451,
+              "mean_sign_agreement": 1.0,
+              "standard_deviation": 0.0,
+              "true_support_fraction": 0.0
+            }
+          }
+        }
+      ],
+      "episode_id": "G1_layout-A_target-orange_juice_level-L0_seed-0000",
+      "passed": true,
+      "same_prompt_passed": true,
+      "source_hdf5": "/home/hci-lab/repos/openpi/artifacts/pi05_libero_spatial_legibility_formal_seed0_20260818/rollouts/episodes/G1_layout-A_target-orange_juice_level-L0_seed-0000.h5",
+      "source_hdf5_sha256": "ecf064673c11d1df1acc8224b5ae14ddf6d26bbf92155bd46e284599dd603e2f",
+      "target_candidate_index": 1,
+      "target_identity": "orange_juice"
+    }
+  ],
+  "final_semantic_grounding_passed": false,
+  "final_semantic_true_support_fraction_mean": 0.5,
+  "flow_timesteps": [
+    0.1,
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "frozen_geometry_path": "/home/hci-lab/repos/openpi/artifacts/pi05_libero_spatial_legibility_formal_seed0_20260818/frozen_geometry.json",
+  "frozen_geometry_sha256": "456da6d01af8ec7a03e0ec7d694e9b96d0c4da7d35fbca7d0715852033cb92c9",
+  "initial_semantic_true_support_fraction_mean": 0.5,
+  "noise_samples": 2,
+  "passed": false,
+  "prefix_cache_validation": {
+    "absolute_tolerance": 0.02,
+    "allclose": true,
+    "max_absolute_difference": 0.015625,
+    "mean_absolute_difference": 0.0017095565563067794,
+    "relative_tolerance": 0.02,
+    "residual_shape": [
+      1,
+      10,
+      32
+    ]
+  },
+  "prefix_cache_validation_passed": true,
+  "same_prompt_passed": true,
+  "sanity_gate": "methodological invariances plus positive final pre-grasp truth margin for both target identities",
+  "schema_version": 1,
+  "seeds": [
+    0
+  ]
+}

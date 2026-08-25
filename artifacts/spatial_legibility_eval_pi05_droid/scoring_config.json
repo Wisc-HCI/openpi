@@ -1,0 +1,29 @@
+{
+  "checkpoint_dir": "/home/hci-lab/.cache/openpi/openpi-assets/checkpoints/pi05_droid",
+  "data_dir": "/home/hci-lab/repos/droid/data",
+  "train_date_dir": "/home/hci-lab/repos/droid/datastore/kindred/2026-08-09",
+  "test_date_dir": "/home/hci-lab/repos/droid/data/failure/2026-08-09",
+  "output_dir": "/home/hci-lab/repos/openpi/artifacts/spatial_legibility_eval_pi05_droid",
+  "config_name": "pi05_droid",
+  "date": "2026-08-09",
+  "num_samples": 8,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_min": 0.3,
+  "tau_max": 0.7,
+  "action_dims": 8,
+  "split": "both",
+  "max_episodes": null,
+  "overwrite": true,
+  "jax_devices": [
+    "cuda:0"
+  ],
+  "candidate_instructions": [
+    "pick up the left block",
+    "pick up the right block"
+  ],
+  "evidence_timestamp": "chunk stop; no future-action leakage"
+}

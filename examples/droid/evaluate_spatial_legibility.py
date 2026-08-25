@@ -39,6 +39,8 @@ from openpi.training import config as training_config
 class Args:
     checkpoint_dir: Path
     data_dir: Path = Path("/home/hci-lab/repos/droid/data")
+    train_date_dir: Path | None = None
+    test_date_dir: Path | None = None
     output_dir: Path = Path("artifacts/spatial_legibility_eval_39999")
     config_name: str = "pi05_droid_finetune"
     date: str = "2026-08-09"
@@ -49,6 +51,7 @@ class Args:
     action_dims: int = 8
     split: str = "both"
     max_episodes: int | None = None
+    controlled_test: bool = False
     overwrite: bool = False
 
     def __post_init__(self):
@@ -82,11 +85,8 @@ class CheckpointScorer:
         train_config = training_config.get_config(args.config_name)
         if not train_config.model.pi05:
             raise ValueError(f"{args.config_name} is not a pi0.5 config")
-        if train_config.model.action_horizon != 16 or train_config.model.action_dim != 32:
-            raise ValueError(
-                "Expected pi05-DROID model with horizon 16 and model action dimension 32, got "
-                f"{train_config.model.action_horizon} and {train_config.model.action_dim}"
-            )
+        if train_config.model.action_dim != 32:
+            raise ValueError(f"Expected pi05-DROID model action dimension 32, got {train_config.model.action_dim}")
 
         params_path = args.checkpoint_dir / "params"
         if not params_path.exists():
@@ -242,9 +242,16 @@ def _episode_geometry(arrays: droid_dataset.EpisodeArrays) -> dict[str, float]:
 
 
 def _select_episodes(args: Args) -> tuple[list[droid_dataset.EpisodeSpec], list[droid_dataset.EpisodeSpec]]:
-    train = droid_dataset.discover_episode_pairs(args.data_dir / "success" / args.date, "train")
-    test = droid_dataset.discover_episode_pairs(args.data_dir / "failure" / args.date, "test")
-    droid_dataset.validate_expected_dataset(train, test)
+    train_root = args.train_date_dir or args.data_dir / "success" / args.date
+    test_root = args.test_date_dir or args.data_dir / "failure" / args.date
+    train = droid_dataset.discover_episode_pairs(train_root, "train")
+    if args.controlled_test:
+        test = droid_dataset.discover_controlled_condition_pairs(test_root)
+        if len(train) != 32:
+            raise ValueError(f"Expected 32 reference trajectories, got {len(train)}")
+    else:
+        test = droid_dataset.discover_episode_pairs(test_root, "test")
+        droid_dataset.validate_expected_dataset(train, test)
     if args.split == "train":
         test = []
     elif args.split == "test":
@@ -262,6 +269,8 @@ def main(args: Args) -> None:
         args,
         checkpoint_dir=args.checkpoint_dir.resolve(),
         data_dir=args.data_dir.resolve(),
+        train_date_dir=args.train_date_dir.resolve() if args.train_date_dir else None,
+        test_date_dir=args.test_date_dir.resolve() if args.test_date_dir else None,
         output_dir=args.output_dir.resolve(),
     )
     scores_path = args.output_dir / "chunk_scores.csv"
@@ -281,6 +290,8 @@ def main(args: Args) -> None:
                 **dataclasses.asdict(args),
                 "checkpoint_dir": str(args.checkpoint_dir),
                 "data_dir": str(args.data_dir),
+                "train_date_dir": str(args.train_date_dir) if args.train_date_dir else None,
+                "test_date_dir": str(args.test_date_dir) if args.test_date_dir else None,
                 "output_dir": str(args.output_dir),
                 "jax_devices": [str(device) for device in jax.devices()],
                 "candidate_instructions": list(droid_dataset.CANDIDATE_INSTRUCTIONS),

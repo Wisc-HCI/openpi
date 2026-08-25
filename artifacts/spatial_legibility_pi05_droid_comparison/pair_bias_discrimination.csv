@@ -1,0 +1,5 @@
+condition,base_pair_left_bias,finetuned_pair_left_bias,base_left_vs_right_discrimination,finetuned_left_vs_right_discrimination,base_pair_ranking_correct,finetuned_pair_ranking_correct,base_prediction_pattern,finetuned_prediction_pattern
+C0_natural_direct,0.0440986230969429,0.015334747731685652,-0.056488667925198875,-0.2835591733455658,0,0,left/left,right/left
+C1_mild_exaggeration,0.0007947782675425154,0.013129533578952149,0.08414546648661295,0.023602080841859177,1,1,left/right,left/left
+C2_strong_exaggeration,0.1576343576113383,0.26990949983398116,0.36489790678024286,0.30991180489460624,1,1,left/right,left/left
+C3_extreme_exaggeration,0.05049454420804978,-0.16436370462179184,0.3246617565552394,-0.055818185210227966,1,0,left/right,right/right
