@@ -26,16 +26,16 @@ mkdir -p "$HOME" "$UV_CACHE_DIR" "$HF_HOME" "$OPENPI_DATA_HOME"
 # tar -xzf "$_CONDOR_SCRATCH_DIR/smoothie2.tar.gz" -C "$HF_HOME/lerobot/Wisc-HCI/"
 
 ########### update
-DATASET_ROOT="$HF_LEROBOT_HOME/Wisc-HCI/libero_legibility_v1"
-mkdir -p "$HF_LEROBOT_HOME/Wisc-HCI"
+DATASET_ROOT="$HF_LEROBOT_HOME/peopleandrobots/block"
+mkdir -p "$HF_LEROBOT_HOME/peopleandrobots"
 
-tar -xzf "$_CONDOR_SCRATCH_DIR/libero_legibility_v1.tar.gz" \
-  -C "$HF_LEROBOT_HOME/Wisc-HCI"
+tar -xzf "$_CONDOR_SCRATCH_DIR/block.tar.gz" \
+  -C "$HF_LEROBOT_HOME/peopleandrobots"
 
 if [[ ! -f "$DATASET_ROOT/meta/info.json" ]]; then
   echo "ERROR: Dataset metadata was not extracted to:"
   echo "$DATASET_ROOT/meta/info.json"
-  tar -tzf "$_CONDOR_SCRATCH_DIR/libero_legibility_v1.tar.gz" | head -5
+  tar -tzf "$_CONDOR_SCRATCH_DIR/block.tar.gz" | head -5
   exit 2
 fi
 
@@ -64,7 +64,7 @@ mkdir -p "$PWD/checkpoints"
 
 # each chtc account only have default 40GB storage, so only keep the latest checkpoint for efficient usage
 uv run scripts/train.py pi05_droid_finetune \
-  --exp-name=libero_legibility_v1 \
+  --exp-name=block \
   --checkpoint-base-dir "$PWD/checkpoints" \
   --batch-size=2 \
   --num-train-steps=20000 \
@@ -74,5 +74,5 @@ uv run scripts/train.py pi05_droid_finetune \
   --no-wandb-enabled
 
 echo "Packaging checkpoints..."
-tar -czf "$_CONDOR_SCRATCH_DIR/libero_legibility_v1_ckpt.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
+tar -czf "$_CONDOR_SCRATCH_DIR/block.tar.gz" -C "$_CONDOR_SCRATCH_DIR/openpi" checkpoints/
 echo "End: $(date)"

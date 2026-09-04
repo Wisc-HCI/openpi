@@ -1,0 +1,4 @@
+services:
+  openpi_server:
+    volumes:
+      - /workspace/checkpoints:/workspace/checkpoints:ro

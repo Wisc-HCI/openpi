@@ -26,6 +26,25 @@ import tyro
 LIBERO_DUMMY_ACTION = np.asarray([0.0] * 6 + [-1.0], dtype=np.float32)
 LIBERO_ENV_RESOLUTION = 256
 _TASK_PAIRS = {
+    "two_object_pickup": {
+        "artifact_prefix": "two_object_pickup",
+        "tasks": {
+            "cream_cheese": {
+                "bddl": (
+                    "third_party/libero/libero/libero/bddl_files/custom_two_object_pickup/"
+                    "TWO_OBJECT_DIAGONAL_PICKUP_pick_up_the_cream_cheese.bddl"
+                ),
+                "prompt": "pick up the cream cheese",
+            },
+            "tomato_sauce": {
+                "bddl": (
+                    "third_party/libero/libero/libero/bddl_files/custom_two_object_pickup/"
+                    "TWO_OBJECT_DIAGONAL_PICKUP_pick_up_the_tomato_sauce.bddl"
+                ),
+                "prompt": "pick up the tomato sauce",
+            },
+        },
+    },
     "black_bowl": {
         "artifact_prefix": "black_bowl",
         "tasks": {
@@ -91,7 +110,9 @@ class Args:
 
     task_pair: str = "black_bowl"
     target: str = "both"
-    # One of: base, time_decay, belief. This is checked against server metadata.
+    # One of: base, time_decay, time_decay_g0p9, time_decay_g0p5, belief.
+    # The explicit gamma labels prevent differently tuned temporal baselines
+    # from being mixed in the same result group.
     condition: str = "base"
     num_trials: int = 1
     init_state_start: int = 0
@@ -324,8 +345,14 @@ def _load_existing_episode(
 
 def _validate_server(args: Args, target: str, metadata: dict[str, object]) -> dict[str, object]:
     condition = args.condition
-    if condition not in {"base", "time_decay", "belief"}:
-        raise ValueError("--condition must be one of: base, time_decay, belief")
+    time_decay_conditions = {
+        "time_decay": None,
+        "time_decay_g0p9": 0.9,
+        "time_decay_g0p5": 0.5,
+    }
+    valid_conditions = {"base", "belief", *time_decay_conditions}
+    if condition not in valid_conditions:
+        raise ValueError(f"--condition must be one of: {', '.join(sorted(valid_conditions))}")
     steering = metadata.get("steering")
     if not isinstance(steering, dict):
         raise RuntimeError("Policy server metadata has no steering configuration; restart it with the updated server")
@@ -341,12 +368,17 @@ def _validate_server(args: Args, target: str, metadata: dict[str, object]) -> di
         raise RuntimeError(
             f"{condition}/{target} requires negative prompt {expected_negative!r}, server has {negative_prompt!r}"
         )
-    if condition == "time_decay":
+    if condition in time_decay_conditions:
         if bool(steering.get("belief_weighted")):
             raise RuntimeError("time_decay condition requires belief_weighted=false")
         decay = float(steering.get("guidance_decay", 1.0))
         if not 0.0 <= decay < 1.0:
             raise RuntimeError(f"time_decay condition requires guidance_decay < 1, got {decay}")
+        expected_decay = time_decay_conditions[condition]
+        if expected_decay is not None and not math.isclose(decay, expected_decay):
+            raise RuntimeError(
+                f"{condition} requires guidance_decay={expected_decay}, got {decay}"
+            )
         if bool(steering.get("guidance_zero_first_chunk")):
             raise RuntimeError("time_decay condition must start with its full initial guidance weight")
     else:
@@ -472,7 +504,7 @@ def _save_episode(
         },
     }
     metadata_path.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
-    logging.info("Saved %s", video_path)
+    logging.info("Saved %s", video_path if args.save_video else trajectory_path)
     return result
 
 
