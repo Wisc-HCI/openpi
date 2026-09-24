@@ -4,10 +4,12 @@ import flax.nnx as nnx
 import jax
 import jax.numpy as jnp
 import numpy as np
+from openpi_client import msgpack_numpy
 
 from openpi.models import model as _model
 from openpi.models import pi0 as _pi0
 import openpi.models.pi0_config as _pi0_config
+from openpi.policies import policy as _policy
 
 
 def _get_frozen_state(config: _pi0_config.Pi0Config) -> nnx.State:
@@ -125,6 +127,36 @@ def test_sample_actions_batches_two_instructions_and_returns_positive_batch():
 
     assert actions.shape == noise.shape
     np.testing.assert_allclose(actions, -3.0)
+
+
+def test_request_competing_command_changes_integrated_flow(monkeypatch):
+    model = _FakePi0()
+    model.sample_actions = _pi0.Pi0.sample_actions.__get__(model)
+    monkeypatch.setattr(_policy.nnx_utils, "module_jit", lambda method: method)
+
+    def tokenize(data):
+        token = {"positive": 2, "competing A": 1, "competing B": 3}[data.pop("prompt")]
+        return {
+            **data,
+            "tokenized_prompt": np.asarray([token], dtype=np.int32),
+            "tokenized_prompt_mask": np.asarray([True]),
+        }
+
+    policy = _policy.Policy(model, transforms=[tokenize], sample_kwargs={"guidance_scale": 1.0, "num_steps": 2})
+    image = np.zeros((224, 224, 3), dtype=np.float32)
+    obs = {
+        "image": dict.fromkeys(_model.IMAGE_KEYS, image),
+        "image_mask": {key: np.ones((), dtype=np.bool_) for key in _model.IMAGE_KEYS},
+        "state": np.zeros(1, dtype=np.float32),
+        "prompt": "positive",
+    }
+    noise = np.zeros((2, 1), dtype=np.float32)
+    for competing, expected_action in [("competing A", -3.0), ("competing B", -1.0), (None, -2.0)]:
+        request = {**obs, "negative_prompt": competing}
+        # Use the same serialization as the websocket client/server.
+        request = msgpack_numpy.unpackb(msgpack_numpy.Packer().pack(request))
+        result = policy.infer(request, noise=noise)
+        np.testing.assert_allclose(result["actions"], expected_action)
 
 
 def test_score_actions_uses_common_random_numbers_for_both_instructions():

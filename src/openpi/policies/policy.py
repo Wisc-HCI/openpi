@@ -1,4 +1,5 @@
 from collections.abc import Sequence
+import inspect
 import logging
 import pathlib
 import time
@@ -15,6 +16,7 @@ from typing_extensions import override
 
 from openpi import transforms as _transforms
 from openpi.legibility import observer as _observer
+from openpi.legibility import steering as _steering
 from openpi.models import model as _model
 from openpi.shared import array_typing as at
 from openpi.shared import nnx_utils
@@ -51,17 +53,22 @@ class Policy(BasePolicy):
             pytorch_device: Device to use for PyTorch models (e.g., "cpu", "cuda:0").
                           Only relevant when is_pytorch=True.
             is_pytorch: Whether the model is a PyTorch model. If False, assumes JAX model.
-            negative_prompt: Fixed negative instruction for JAX bipolar guidance. If None, sampling is unchanged.
-            observer_config: Online two-instruction observer settings. If None, belief updates are disabled.
+            negative_prompt: Default competing instruction for JAX bipolar guidance. Each inference request can
+                override it with its own negative_prompt. No resolved negative prompt means ordinary sampling.
+            observer_config: Library default observer settings. Requests with a steering config replace this default.
             guidance_decay: Multiplicative guidance decay applied once per policy query / executed action segment.
             guidance_zero_first_chunk: If true, sample the first chunk after reset without guidance.
         """
         if negative_prompt is not None and not negative_prompt.strip():
             raise ValueError("negative_prompt must be non-empty when provided")
-        if negative_prompt is not None and is_pytorch:
-            raise ValueError("Fixed-negative guidance is currently implemented only for JAX Pi0/Pi0.5 models")
-        if observer_config is not None and negative_prompt is None:
-            raise ValueError("observer_config requires a negative_prompt")
+        self._supports_negative_prompt = (
+            not is_pytorch and "negative_observation" in inspect.signature(model.sample_actions).parameters
+        )
+        self._supports_observer = self._supports_negative_prompt and callable(getattr(model, "score_actions", None))
+        if (negative_prompt is not None or observer_config is not None) and not self._supports_negative_prompt:
+            raise ValueError("Two-instruction guidance and the observer require a JAX Pi0/Pi0.5 model")
+        if observer_config is not None and not self._supports_observer:
+            raise ValueError("The observer requires a model with score_actions")
         if not 0.0 <= guidance_decay <= 1.0:
             raise ValueError(f"guidance_decay must be in [0, 1], got {guidance_decay}")
 
@@ -69,15 +76,32 @@ class Policy(BasePolicy):
         self._input_transform = _transforms.compose(transforms)
         self._output_transform = _transforms.compose(output_transforms)
         self._sample_kwargs = sample_kwargs or {}
-        self._metadata = metadata or {}
+        self._metadata = {
+            **(metadata or {}),
+            "supports_request_negative_prompt": self._supports_negative_prompt,
+            "steering_protocol_version": _steering.PROTOCOL_VERSION,
+            "steering_modes": ["off"]
+            + (["fixed", "time_decay"] if self._supports_negative_prompt else [])
+            + (["belief"] if self._supports_observer else []),
+            "steering_action_dim": getattr(model, "action_dim", None),
+        }
         self._is_pytorch_model = is_pytorch
         self._pytorch_device = pytorch_device
         self._negative_prompt = negative_prompt
         self._observer_config = observer_config
         self._guidance_decay = float(guidance_decay)
         self._guidance_zero_first_chunk = guidance_zero_first_chunk
+        # Preserve constructor defaults for offline / legacy simulation callers.
+        # A request config REPLACES these settings; it never inherits their scale,
+        # temperature, first-chunk rule, or default competing instruction.
+        self._constructor_observer_config = observer_config
+        self._constructor_decay = float(guidance_decay)
+        self._constructor_zero_first_chunk = guidance_zero_first_chunk
+        self._request_steering = None
+        self._rollout_id = None
         self._guidance_query_index = 0
         self._guidance_positive_prompt = None
+        self._guidance_negative_prompt = None
         self._belief_filter = (
             _observer.BeliefFilter(observer_config.temperature) if observer_config is not None else None
         )
@@ -86,6 +110,7 @@ class Policy(BasePolicy):
         self._observer_positive_prompt = None
         self._observer_last_energies = None
         self._observer_warmed_up = False
+        self._observer_warmup_signatures = set()
 
         if self._is_pytorch_model:
             self._model = self._model.to(pytorch_device)
@@ -94,12 +119,48 @@ class Policy(BasePolicy):
         else:
             # JAX model setup
             self._sample_actions = nnx_utils.module_jit(model.sample_actions)
-            if observer_config is not None:
+            if self._supports_observer:
                 self._score_actions = nnx_utils.module_jit(
                     model.score_actions,
                     static_argnames=("num_samples", "action_dims"),
                 )
             self._rng = rng or jax.random.key(0)
+
+    def _configure_request_steering(self, config):
+        """Switch runtime settings without reloading model weights or JIT wrappers."""
+        if config == self._request_steering:
+            return False
+        self._request_steering = config
+        if config is None:
+            observer = self._constructor_observer_config
+            self._guidance_decay = self._constructor_decay
+            self._guidance_zero_first_chunk = self._constructor_zero_first_chunk
+        else:
+            self._guidance_decay = config.decay if config.mode == "time_decay" else 1.0
+            self._guidance_zero_first_chunk = False  # First weight is explicit in the new protocol.
+            observer = (
+                _observer.ObserverConfig(
+                    temperature=config.belief_temperature,
+                    num_samples=config.belief_samples,
+                    tau_min=config.belief_tau_min,
+                    tau_max=config.belief_tau_max,
+                    action_dims=config.belief_action_dims,
+                    belief_weighted=True,
+                    guidance_lambda=config.belief_lambda,
+                )
+                if config.mode == "belief" else None
+            )
+        self._observer_config = observer
+        self._belief_filter = _observer.BeliefFilter(observer.temperature) if observer is not None else None
+        self._observer_previous_raw_observation = None
+        self._observer_previous_actions = None
+        self._observer_last_energies = None
+        self._observer_positive_prompt = None
+        self._observer_warmed_up = (
+            observer is not None
+            and (observer.num_samples, observer.action_dims) in self._observer_warmup_signatures
+        )
+        return True
 
     @staticmethod
     def _copy_tree(tree):
@@ -136,7 +197,7 @@ class Policy(BasePolicy):
         self._observer_last_energies = None
         logging.info("Reset legibility observer with uniform belief for prompt %r", positive_prompt)
 
-    def _update_observer(self, executed_actions) -> None:
+    def _update_observer(self, executed_actions, *, negative_prompt: str) -> None:
         assert self._observer_config is not None
         assert self._belief_filter is not None
         if self._observer_previous_raw_observation is None or self._observer_previous_actions is None:
@@ -167,7 +228,7 @@ class Policy(BasePolicy):
         )
         negative_inputs = self._transform_inputs(
             self._observer_previous_raw_observation,
-            prompt=self._negative_prompt,
+            prompt=negative_prompt,
             actions=completed_actions,
         )
         positive_actions = np.asarray(positive_inputs.pop("actions"))
@@ -231,11 +292,35 @@ class Policy(BasePolicy):
         else:
             np.asarray(energies)
         self._observer_warmed_up = True
+        self._observer_warmup_signatures.add((self._observer_config.num_samples, self._observer_config.action_dims))
         logging.info("Observer scorer compiled in %.2f seconds", time.monotonic() - start_time)
 
     @override
     def infer(self, obs: dict, *, noise: np.ndarray | None = None) -> dict:  # type: ignore[misc]
         raw_observation = self._copy_tree(obs)
+        request_config = raw_observation.pop("steering", None)
+        request_config = _steering.SteeringConfig.from_request(request_config) if request_config is not None else None
+        rollout_id = raw_observation.pop("rollout_id", None)
+        if rollout_id is not None and (not isinstance(rollout_id, str) or not rollout_id.strip()):
+            raise ValueError("rollout_id must be a non-empty string")
+        if request_config is not None:
+            if request_config.mode not in self._metadata["steering_modes"]:
+                raise ValueError(f"Model does not support steering mode {request_config.mode!r}")
+            if request_config.mode == "belief" and request_config.belief_action_dims > self._model.action_dim:
+                raise ValueError("belief_action_dims exceeds the model action dimension")
+        negative_prompt = raw_observation.pop("negative_prompt", None)
+        if negative_prompt is None and request_config is None:
+            negative_prompt = self._negative_prompt
+        if negative_prompt is not None:
+            if not isinstance(negative_prompt, str) or not negative_prompt.strip():
+                raise ValueError("negative_prompt must be a non-empty string when provided")
+            negative_prompt = negative_prompt.strip()
+            if not self._supports_negative_prompt and (request_config is None or request_config.mode != "off"):
+                raise ValueError("Request-level negative_prompt requires a JAX Pi0/Pi0.5 model")
+        elif request_config is not None and request_config.mode != "off":
+            raise ValueError("Steering requires negative_prompt in each request")
+        elif request_config is None and self._constructor_observer_config is not None:
+            raise ValueError("The observer requires negative_prompt in the request or as a server default")
         executed_actions = raw_observation.pop("previous_executed_actions", None)
         observer_reset = bool(np.asarray(raw_observation.pop("observer_reset", False)).item())
         sampling_seed_value = raw_observation.pop("sampling_seed", None)
@@ -248,37 +333,53 @@ class Policy(BasePolicy):
             if not 0 <= sampling_seed <= np.iinfo(np.uint32).max:
                 raise ValueError(f"sampling_seed must be in [0, 2**32 - 1], got {sampling_seed}")
         positive_prompt = self._prompt_text(raw_observation.get("prompt"))
+        if request_config is not None and request_config.mode != "off":
+            if not positive_prompt or not positive_prompt.strip():
+                raise ValueError("Steering requires an explicit positive prompt")
+            if positive_prompt.strip().casefold() == negative_prompt.casefold():
+                raise ValueError("Positive and competing instructions must be different for steering")
+        # Validate before mutation. Changing configuration or rollout starts fresh,
+        # even if a caller accidentally includes commands from its old context.
+        config_changed = self._configure_request_steering(request_config)
+        rollout_changed = rollout_id != self._rollout_id
 
-        prompt_changed = self._guidance_positive_prompt is not None and positive_prompt != self._guidance_positive_prompt
-        if observer_reset or prompt_changed:
+        prompt_changed = self._guidance_query_index > 0 and (
+            positive_prompt != self._guidance_positive_prompt or negative_prompt != self._guidance_negative_prompt
+        )
+        reset_context = observer_reset or prompt_changed or config_changed or rollout_changed
+        if reset_context:
             self._guidance_query_index = 0
 
         observer_score_ms = 0.0
         if self._observer_config is not None:
-            if observer_reset or prompt_changed:
+            if reset_context:
                 self._reset_observer(positive_prompt)
-            if executed_actions is not None and not observer_reset:
+            if executed_actions is not None and not reset_context:
                 observer_start = time.monotonic()
-                self._update_observer(executed_actions)
+                self._update_observer(executed_actions, negative_prompt=negative_prompt)
                 observer_score_ms = (time.monotonic() - observer_start) * 1000
 
         # Make copies since transformations may modify their inputs in place.
         inputs = self._transform_inputs(raw_observation)
         sample_kwargs = dict(self._sample_kwargs)
-        initial_guidance_scale = float(sample_kwargs.get("guidance_scale", 0.0))
+        initial_guidance_scale = float(sample_kwargs.get("guidance_scale", 1.0)) if negative_prompt is not None else 0.0
+        if request_config is not None:
+            initial_guidance_scale = request_config.initial_scale if request_config.mode != "off" else 0.0
         effective_guidance_scale = initial_guidance_scale * self._guidance_decay**self._guidance_query_index
         if self._observer_config is not None and self._observer_config.belief_weighted:
             assert self._belief_filter is not None
             effective_guidance_scale = self._observer_config.guidance_lambda * self._belief_filter.negative
         if self._guidance_zero_first_chunk and self._guidance_query_index == 0:
             effective_guidance_scale = 0.0
+        if request_config is not None and request_config.mode == "belief" and self._guidance_query_index == 0:
+            effective_guidance_scale = request_config.initial_scale
 
         negative_inputs = None
         needs_negative_inputs = effective_guidance_scale > 0 or (
             self._observer_config is not None and not self._observer_warmed_up
         )
-        if self._negative_prompt is not None and needs_negative_inputs:
-            negative_inputs = self._transform_inputs(raw_observation, prompt=self._negative_prompt)
+        if negative_prompt is not None and needs_negative_inputs:
+            negative_inputs = self._transform_inputs(raw_observation, prompt=negative_prompt)
         if effective_guidance_scale > 0:
             sample_kwargs["guidance_scale"] = effective_guidance_scale
         else:
@@ -335,13 +436,18 @@ class Policy(BasePolicy):
             "observer_score_ms": observer_score_ms,
         }
         outputs["guidance"] = {
+            "negative_prompt": negative_prompt,
             "query_index": self._guidance_query_index,
             "initial_guidance_scale": initial_guidance_scale,
             "guidance_decay": self._guidance_decay,
             "zero_first_chunk": self._guidance_zero_first_chunk,
             "effective_guidance_scale": effective_guidance_scale,
             "sampling_seed": sampling_seed,
+            "context_reset": reset_context,
         }
+        if request_config is not None:
+            outputs["steering"] = request_config.to_dict()
+            outputs["rollout_id"] = rollout_id
         if self._observer_config is not None:
             assert self._belief_filter is not None
             self._observer_previous_raw_observation = self._copy_tree(raw_observation)
@@ -361,6 +467,8 @@ class Policy(BasePolicy):
             }
         self._guidance_query_index += 1
         self._guidance_positive_prompt = positive_prompt
+        self._guidance_negative_prompt = negative_prompt
+        self._rollout_id = rollout_id
         return outputs
 
     @property

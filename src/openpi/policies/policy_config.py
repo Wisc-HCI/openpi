@@ -43,7 +43,8 @@ def create_trained_policy(
             from the checkpoint directory.
         pytorch_device: Device to use for PyTorch models (e.g., "cpu", "cuda", "cuda:0").
                       If None and is_pytorch=True, will use "cuda" if available, otherwise "cpu".
-        negative_prompt: Fixed negative instruction for two-instruction bipolar guidance. If None, guidance is disabled.
+        negative_prompt: Default competing instruction for two-instruction guidance. Requests can override it.
+            If neither the server nor the request supplies one, guidance is disabled.
         guidance_scale: Extrapolation strength in ``v_pos + scale * (v_pos - v_neg)``.
         observer_config: Online belief settings. If None, residual scoring and belief updates are disabled.
         guidance_decay: Multiplicative guidance decay applied between policy queries.
@@ -56,18 +57,17 @@ def create_trained_policy(
     repack_transforms = repack_transforms or transforms.Group()
     if negative_prompt is not None and not negative_prompt.strip():
         raise ValueError("negative_prompt must be non-empty when provided")
-    if observer_config is not None and negative_prompt is None:
-        raise ValueError("observer_config requires a negative_prompt")
     if observer_config is not None and observer_config.action_dims > train_config.model.action_dim:
         raise ValueError(
             f"Observer action_dims ({observer_config.action_dims}) exceeds model action_dim "
             f"({train_config.model.action_dim})"
         )
-    if negative_prompt is not None and train_config.model.model_type not in {
+    supports_bipolar_guidance = train_config.model.model_type in {
         _model.ModelType.PI0,
         _model.ModelType.PI05,
-    }:
-        raise ValueError("Fixed-negative guidance is supported only for Pi0/Pi0.5 models")
+    }
+    if (negative_prompt is not None or observer_config is not None) and not supports_bipolar_guidance:
+        raise ValueError("Two-instruction guidance and the observer are supported only for Pi0/Pi0.5 models")
     if guidance_scale < 0:
         raise ValueError(f"guidance_scale must be non-negative, got {guidance_scale}")
     if not 0.0 <= guidance_decay <= 1.0:
@@ -77,8 +77,8 @@ def create_trained_policy(
     # Check if this is a PyTorch model by looking for model.safetensors
     weight_path = os.path.join(checkpoint_dir, "model.safetensors")
     is_pytorch = os.path.exists(weight_path)
-    if negative_prompt is not None and is_pytorch:
-        raise ValueError("Fixed-negative guidance is currently implemented only for JAX checkpoints")
+    if (negative_prompt is not None or observer_config is not None) and is_pytorch:
+        raise ValueError("Two-instruction guidance and the observer are currently implemented only for JAX checkpoints")
 
     logging.info("Loading model...")
     if is_pytorch:
@@ -103,15 +103,11 @@ def create_trained_policy(
         except ImportError:
             pytorch_device = "cpu"
 
-    fixed_guidance_enabled = (
-        negative_prompt is not None
-        and guidance_scale > 0
-        and not (observer_config is not None and observer_config.belief_weighted)
-    )
-    negative_prompt_enabled = fixed_guidance_enabled or observer_config is not None
     resolved_sample_kwargs = dict(sample_kwargs or {})
-    if fixed_guidance_enabled:
-        logging.info("Enabling fixed-negative guidance with scale %.3f and prompt %r", guidance_scale, negative_prompt)
+    if supports_bipolar_guidance and not is_pytorch:
+        logging.info(
+            "Configuring request/default negative guidance: scale=%.3f default=%r", guidance_scale, negative_prompt
+        )
         resolved_sample_kwargs["guidance_scale"] = guidance_scale
     if observer_config is not None:
         logging.info(
@@ -145,7 +141,7 @@ def create_trained_policy(
         metadata=train_config.policy_metadata,
         is_pytorch=is_pytorch,
         pytorch_device=pytorch_device if is_pytorch else None,
-        negative_prompt=negative_prompt if negative_prompt_enabled else None,
+        negative_prompt=negative_prompt,
         observer_config=observer_config,
         guidance_decay=guidance_decay,
         guidance_zero_first_chunk=guidance_zero_first_chunk,
